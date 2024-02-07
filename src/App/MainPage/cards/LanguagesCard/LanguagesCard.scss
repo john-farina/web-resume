@@ -1,10 +1,12 @@
-#icon-container {
+.flex-grid {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.icon-row {
-    display: flex;
-    gap: 15px;
+.flex-grid > * {
+    flex:  1  0 auto;
+    max-width: 80px;
+    max-height: 80px;
+    margin: 7px;
 }

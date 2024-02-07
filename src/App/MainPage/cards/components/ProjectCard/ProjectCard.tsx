@@ -98,6 +98,7 @@ function ProjectCard({
                     {gitHubLogoRender()}
                     <a
                         href={liveDemoLink}
+                        target="_blank"
                         onClick={() => {
                             //   gaEventTracker(`${title}: WEBSITE CLICK`);
                         }}

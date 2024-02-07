@@ -51,11 +51,13 @@
         margin-top: 30px;
         width: 100%;
         height: 300px;
-        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(10px);
 
         .linkage {
             margin-top: -15px;
-            width: 150px;
+            width: 160px;
             height: 30px;
             z-index: 0;
             position: absolute;
@@ -65,8 +67,7 @@
             z-index: 1;
             width: 100%;
             height: 20%;
-            background-color: rgb(27, 27, 27);
-            border: solid 2px $white;
+            border: solid 2px rgba($white, 0.4);
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -108,7 +109,7 @@
                 z-index: 3;
                 font-size: 1.4rem;
                 margin-left: 10px;
-
+                transition: color 0.2s ease-in-out;
                 &:hover {
                     color: $blue;
                     text-decoration: underline;
@@ -120,9 +121,7 @@
             width: 100%;
             height: 80%;
             display: flex;
-
-            background-color: rgb(22, 22, 22);
-            border: solid $white 2px;
+            border: solid 2px rgba($white, 0.4);
             border-top: 0;
             border-radius: 0px 0px 3px 3px;
 
@@ -132,7 +131,7 @@
                 justify-content: center;
                 width: 55%;
                 height: 100%;
-                border: 2px dashed rgb(192, 192, 177);
+                border: 2px dashed rgba($white, 0.2);
                 border-left: 0;
                 border-top: 0;
                 border-bottom: 0;

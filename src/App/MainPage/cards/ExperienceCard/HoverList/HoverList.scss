@@ -6,7 +6,7 @@
     .alertPopUp {
         cursor: default;
         display: flex;
-        pointer-events: none;
+        visibility: hidden;
         opacity: 0%;
         align-items: center;
         justify-content: flex-start;
@@ -15,18 +15,46 @@
         background-color: $red;
         padding-top: 8px;
         padding-bottom: 8px;
-        margin-top: -45px;
+        margin-top: -55px;
         transition: opacity 0.3s;
+        z-index: 5;
 
         .cardText {
             font-size: 0.8rem;
             margin-left: 3px;
-            line-height: 15px;
+            line-height: 18px;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                color: $blue;
+                text-decoration: underline;
+            }
+        }
+
+
+        .bridge {
+            position: absolute;
+            width: 80%;
+            height: 20px;
+            bottom: 0;
+            right: 0;
+            margin-bottom: -10px;
         }
     }
 
-    .redColor {
-        color: $red;
+    &.open {
+        .alertPopUp {
+            visibility: visible;
+            opacity: 100%;
+        }
+
+        .companyNameText {
+            color: $red;
+        }
     }
 
     .companyNameText {
