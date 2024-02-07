@@ -7,7 +7,7 @@ function TheLine() {
   return (
     <p className="line">
       {array.map((item, iteration) => {
-        return <Hashtag key={iteration} />;
+        return <Hashtag key={`${item}${iteration}`} />;
       })}
     </p>
   );
