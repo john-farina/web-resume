@@ -7,54 +7,39 @@ interface Props {
 }
 
 const HoverList = ({ position, line }: Props) => {
-    let [popUpStyle, setPopUpStyle] = useState({
-        opacity: "0%",
-    });
     let [className, setClassName] = useState(" ");
-    let string = "`${yourCompany.name}`";
+
+    const onMouseOver = () => {
+        setClassName("open");
+    }
+
+    const onMouseLeave = () => {
+        setClassName("");
+    }
 
     return (
         <li>
-            <div className="hoverList">
-                <div style={popUpStyle} className="alertPopUp">
+            <div className={`hoverList ${className}`}>
+                <div
+                    className="alertPopUp"
+                    onMouseEnter={onMouseOver}
+                    onMouseLeave={onMouseLeave}
+                >
                     <p className="cardText">
                         ERROR: Line {line}:28: 'yourCompany' is not defined <br />
-                        Please contact WEBSITE ADMIN to resolve issues.
+                        Please contact <a href="mailto:johnfarina8@gmail.com" className="emailBtn">WEBSITE ADMIN</a> to resolve issues.
                     </p>
+                    <div className="bridge" />
                 </div>
 
                 <p className="paragraph">
                     {position} @{" "}
                     <span
-                        onMouseEnter={() => {
-                            setPopUpStyle({ opacity: "100%" });
-                            //   gaEventTracker(`CodeJokeHOV: ${position}`);
-                            setClassName(" redColor");
-                        }}
-                        onMouseLeave={() => {
-                            setPopUpStyle({ opacity: "0%" });
-
-                            setClassName("");
-                        }}
+                        onMouseEnter={onMouseOver}
+                        onMouseLeave={onMouseLeave}
                         className={`companyNameText ${className}`}
                     >
-                        {string}
-                    </span>{" "}
-                    -{" "}
-                    <span
-                        onMouseEnter={() => {
-                            setPopUpStyle({ opacity: "100%" });
-                            //   gaEventTracker("Coding Joke Hover");
-                            setClassName(" redColor");
-                        }}
-                        onMouseLeave={() => {
-                            setPopUpStyle({ opacity: "0%" });
-
-                            setClassName("");
-                        }}
-                        className={`companyNameText secondName ` + className}
-                    >
-                        {"`${yourCompany.website}`"}
+                        {"`${yourCompany.name} - ${yourCompany.website}`"}
                     </span>
                 </p>
             </div>

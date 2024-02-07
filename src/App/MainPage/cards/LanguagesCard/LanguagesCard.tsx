@@ -19,8 +19,8 @@ function LanguagesCard() {
             <>
                 <h2 className="header2">Languages, Frameworks, & Libraries:</h2>
 
-                <div id="icon-container">
-                    <div className="icon-row">
+                <div className="flex-grid">
+                    {/* <div className="icon-row"> */}
                         <LanguageIcon
                             image={null}
                             iconClass="fa-brands fa-html5"
@@ -45,9 +45,9 @@ function LanguagesCard() {
                             classes="ruby"
                             placeholder="# ruby"
                         />
-                    </div>
+                    {/* </div> */}
 
-                    <div className="icon-row">
+                    {/* <div className="icon-row"> */}
                         <LanguageIcon
                             image={null}
                             iconClass="fa-brands fa-react"
@@ -73,9 +73,9 @@ function LanguagesCard() {
                             classes="nextJs"
                             placeholder="Next JS"
                         />
-                    </div>
+                    {/* </div> */}
 
-                    <div className="icon-row">
+                    {/* <div className="icon-row"> */}
                         <LanguageIcon
                             iconClass={null}
                             image={PrismaIcon}
@@ -103,9 +103,9 @@ function LanguagesCard() {
                             classes="mui"
                             placeholder={`<MaterialUI size="small">`}
                         />
-                    </div>
+                    {/* </div> */}
 
-                    <div className="icon-row">
+                    {/* <div className="icon-row"> */}
                         <LanguageIcon
                             image={tailwindIcon}
                             iconClass={null}
@@ -113,7 +113,7 @@ function LanguagesCard() {
                             placeholder='"tailwind-logo w-60"'
                         />
                     </div>
-                </div>
+                {/* </div> */}
             </>
         </CardContainer>
     );

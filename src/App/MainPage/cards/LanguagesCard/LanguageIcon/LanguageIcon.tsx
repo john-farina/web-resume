@@ -10,34 +10,12 @@ interface Props {
 }
 
 function LanguageIcon({ image, classes = ``, alt = ``, iconClass, placeholder }: Props) {
-    const [popUpStyle, setPopUpStyle] = useState({ display: "none", marginTop: "0px" });
-    const [popUpClass, setPopUpClass] = useState(" ");
-
-    function onMouseEnter() {
-        setPopUpStyle({ display: "flex", marginTop: "10px" });
-        setPopUpClass(" popUpAnimate");
-    }
-
-    function onMouseExit() {
-        setPopUpClass(" popDownAnimate");
-        // setPopUpStyle({ display: "none" });
-        setTimeout(() => {
-            setPopUpStyle({ display: "none", marginTop: "0px" });
-        }, 190);
-    }
-
-    function onMouseDown() {
-        setPopUpStyle({ display: "flex", marginTop: "10px" });
-    }
-
     if (iconClass !== null) {
         return (
             <div
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseExit}
                 className="icon"
             >
-                <div style={popUpStyle} className={"popUpMenu" + popUpClass}>
+                <div className={"popUpMenu"}>
                     <div className="popUpTri"></div>
                     <h4 className="popUpText">{placeholder}</h4>
                 </div>
@@ -48,10 +26,8 @@ function LanguageIcon({ image, classes = ``, alt = ``, iconClass, placeholder }:
         return (
             <div
                 className="icon"
-                onMouseLeave={onMouseExit}
-                onMouseEnter={onMouseEnter}
             >
-                <div style={popUpStyle} className={"popUpMenu" + popUpClass}>
+                <div className={"popUpMenu"}>
                     <div className="popUpTri"></div>
                     <h4 className="popUpText">{placeholder}</h4>
                 </div>
