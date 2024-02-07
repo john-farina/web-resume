@@ -14,10 +14,8 @@ import {
 
 function ProjectsCard() {
     return (
-        <CardContainer>
+        <CardContainer title="Projects">
             <>
-                <h2 className="header2">Projects</h2>
-
                 <h3 className="header3 ">Full Stack:</h3>
 
                 <ul>
