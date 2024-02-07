@@ -1,0 +1,10 @@
+@use '../../../styles/theme.scss' as *;
+
+.hashtag {
+    color: $white;
+    transition: color 0.15s ease-out;
+    
+    &:hover {
+        color: $red;
+    }
+}
