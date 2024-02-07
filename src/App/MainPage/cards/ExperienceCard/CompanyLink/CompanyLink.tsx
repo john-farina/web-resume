@@ -1,3 +1,5 @@
+import './CompanyLink.scss';
+
 interface Props {
     title: string;
     visibleLink: string;
@@ -9,7 +11,7 @@ const CompanyLink = ({ title, visibleLink, link }: Props) => {
         <p className="paragraph">
             {title} -{" "}
             <a
-                className="companyLink"
+                className="listLink"
                 target="_blank"
                 rel="noreferrer"
                 href={link}

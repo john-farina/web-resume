@@ -10,7 +10,7 @@ import {
 
 function MainPage() {
     return (
-        <div id="card-container">
+        <div className="card-container">
             <IntroduceCard />
             <TheLine />
             <ProjectsCard />

@@ -1,0 +1,15 @@
+$white: rgb(246, 245, 239);
+$extraWhite: rgb(248, 248, 240);
+$gray: #131313;
+$darkGray: rgb(0, 0, 0);
+$blue: rgb(241, 241, 241);
+$red: rgb(220, 78, 78);
+
+.listLink {
+    color: $white;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

@@ -1,5 +1,7 @@
 import { useRef } from "react";
-// import githubIcon from "../img/gtihub.png";
+import "./ProjectCard.scss";
+
+import { githubIcon } from "../../../../../static";
 
 interface Props {
     title: string;
@@ -37,7 +39,7 @@ function ProjectCard({
     function gitHubLogoRender() {
         if (githubLink) {
             return (
-                <a href={githubLink}>
+                <a href={githubLink} target="_blank">
                     <div
                         className="gitHubLogo"
                         onClick={() => {
@@ -46,7 +48,7 @@ function ProjectCard({
                     >
                         <img
                             className="projectIcon"
-                            // src={githubIcon}
+                            src={githubIcon}
                             alt=""
                         />
                     </div>
@@ -58,7 +60,7 @@ function ProjectCard({
     }
 
     return (
-        <div className="newTextContainer">
+        <div className="projectContainer">
             <p className="paragraph">
                 <a
                     onMouseOver={() => {
@@ -93,18 +95,7 @@ function ProjectCard({
             >
                 <div className="linkage"></div>
                 <div className="top">
-                    {/* <a href={githubLink}>
-            <div
-              className="gitHubLogo"
-              onClick={() => {
-                gaEventTracker(`${title}: GITHUB CLICK`);
-              }}
-            >
-              <img className="projectIcon" src={githubIcon} alt="" />
-            </div>
-          </a> */}
                     {gitHubLogoRender()}
-
                     <a
                         href={liveDemoLink}
                         onClick={() => {

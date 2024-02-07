@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './HoverList.scss';
 
 interface Props {
     position: string;
@@ -14,7 +15,7 @@ const HoverList = ({ position, line }: Props) => {
 
     return (
         <li>
-            <div className="popUpList">
+            <div className="hoverList">
                 <div style={popUpStyle} className="alertPopUp">
                     <p className="cardText">
                         ERROR: Line {line}:28: 'yourCompany' is not defined <br />

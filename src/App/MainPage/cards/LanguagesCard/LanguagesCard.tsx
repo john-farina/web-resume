@@ -1,22 +1,22 @@
-// import './LanguagesCard.scss';
-// import railsLogo from "../img/rails.png";
-// import sassIcon from "../img/sass.png";
-// import rubyLogo from "../img/ruby.png";
-// import tailwindIcon from "../img/Tailwind.png";
-// import nextJsIcon from "../img/nextJsIcon.png";
-// import MuiIcon from "../img/MuiIcon.png";
-// import PrismaIcon from "../img/PrismaIcon.png";
-// import TypescriptIcon from "../img/TypescriptIcon.png";
-// import GraphQLIcon from "../img/GraphQLIcon.png";
-
+import './LanguagesCard.scss';
+import CardContainer from "../components/CardContainer";
 import LanguageIcon from "./LanguageIcon";
+import { 
+    sassIcon,
+    TypescriptIcon,
+    PrismaIcon,
+    GraphQLIcon,
+    railsLogo,
+    rubyLogo,
+    nextJsIcon,
+    MuiIcon,
+    tailwindIcon
+} from "../../../../static";
 
 function LanguagesCard() {
     return (
-        <div id="card4" className="card">
-            <div className="cardBack cardBack4"></div>
-
-            <div className="cardContents">
+        <CardContainer>
+            <>
                 <h2 className="header2">Languages, Frameworks, & Libraries:</h2>
 
                 <div id="icon-container">
@@ -40,9 +40,8 @@ function LanguagesCard() {
                         />
 
                         <LanguageIcon
-                            image="temp"
                             iconClass={null}
-                            // image={rubyLogo}
+                            image={rubyLogo}
                             classes="ruby"
                             placeholder="# ruby"
                         />
@@ -56,24 +55,21 @@ function LanguagesCard() {
                         />
 
                         <LanguageIcon
-                            // image={railsLogo}
-                            image="temp"
+                            image={railsLogo}
                             iconClass={null}
                             classes="rails"
                             placeholder="<%= ruby_on_rails %>"
                         />
                         <LanguageIcon
-                            image="temp"
                             iconClass={null}
-                            // image={TypescriptIcon}
+                            image={TypescriptIcon}
                             classes="typescript"
                             placeholder="type { TypeScript }"
                         />
 
                         <LanguageIcon
-                            image="temp"
                             iconClass={null}
-                            // image={nextJsIcon}
+                            image={nextJsIcon}
                             classes="nextJs"
                             placeholder="Next JS"
                         />
@@ -81,32 +77,28 @@ function LanguagesCard() {
 
                     <div className="icon-row">
                         <LanguageIcon
-                            image="temp"
                             iconClass={null}
-                            // image={PrismaIcon}
+                            image={PrismaIcon}
                             classes="prisma"
                             placeholder="prisma.interviewer.accept"
                         />
 
                         <LanguageIcon
-                            image="temp"
                             iconClass={null}
-                            // image={GraphQLIcon}
+                            image={GraphQLIcon}
                             classes="graphql"
                             placeholder="query { GraphQL }"
                         />
 
                         <LanguageIcon
-                            image="temp"
                             iconClass={null}
-                            // image={sassIcon}
+                            image={sassIcon}
                             classes="sass"
                             placeholder="$sass"
                         />
 
                         <LanguageIcon
-                            image="temp"
-                            // image={MuiIcon}
+                            image={MuiIcon}
                             iconClass={null}
                             classes="mui"
                             placeholder={`<MaterialUI size="small">`}
@@ -115,16 +107,15 @@ function LanguagesCard() {
 
                     <div className="icon-row">
                         <LanguageIcon
-                            image="temp"
-                            // image={tailwindIcon}
+                            image={tailwindIcon}
                             iconClass={null}
                             classes="tailwind"
                             placeholder='"tailwind-logo w-60"'
                         />
                     </div>
                 </div>
-            </div>
-        </div>
+            </>
+        </CardContainer>
     );
 }
 

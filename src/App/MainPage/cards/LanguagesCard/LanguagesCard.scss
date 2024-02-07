@@ -1,1 +1,10 @@
-.test {}
+#icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icon-row {
+    display: flex;
+    gap: 15px;
+}

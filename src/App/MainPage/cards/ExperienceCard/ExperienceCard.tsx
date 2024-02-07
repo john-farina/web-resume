@@ -1,10 +1,11 @@
+import CardContainer from "../components/CardContainer";
 import CompanyLink from "./CompanyLink";
 import HoverList from "./HoverList";
 
 function ExperienceCard() {
   return (
-    <div id="card3" className="card">
-      <div className="cardContents">
+    <CardContainer>
+      <>
         <h2 className="header2">Experience:</h2>
 
         <ul>
@@ -15,7 +16,6 @@ function ExperienceCard() {
               title="Jr FullStack @ Swivvel"
               link="https://swivvel.io"
               visibleLink="swivvel.io"
-            //   trackEvent={() => gaEventTracker(`SwivvelLink`)}
             />
           </li>
 
@@ -24,13 +24,12 @@ function ExperienceCard() {
               title="FullStack Internship @ Bedroom Producer"
               link="https://bedroomproducer.io"
               visibleLink="bedroomproducer.io"
-            //   trackEvent={() => gaEventTracker(`BedroomProducerLink`)}
             />
           </li>
 
         </ul>
-      </div>
-    </div>
+      </>
+    </CardContainer>
   );
 }
 

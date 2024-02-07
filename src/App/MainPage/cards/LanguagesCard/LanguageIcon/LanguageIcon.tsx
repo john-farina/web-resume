@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './LanguageIcon.scss';
 
 interface Props {
     image: string | null;

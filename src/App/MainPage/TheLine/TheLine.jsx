@@ -1,35 +1,11 @@
 import Hashtag from "./Hashtag";
+import './TheLine.scss';
 
 function TheLine() {
-  let array = [
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-  ];
+  const array = Array(24).fill("#");
 
   return (
-    <p className="theLine">
+    <p className="line">
       {array.map((item, iteration) => {
         return <Hashtag key={iteration} />;
       })}
