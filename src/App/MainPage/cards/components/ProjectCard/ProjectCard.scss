@@ -1,15 +1,9 @@
-$white: rgb(246, 245, 239);
-$extraWhite: rgb(248, 248, 240);
-$gray: #131313;
-$darkGray: rgb(0, 0, 0);
-$blue: rgb(241, 241, 241);
-$red: rgb(220, 78, 78);
+@use '../../../../styles/theme.scss' as *;
 
 .projectContainer {
     display: flex;
     width: 98%;
     position: relative;
-    // background-color: rgb(217, 115, 115);
 
     .textButton {
         cursor: pointer;
@@ -29,7 +23,6 @@ $red: rgb(220, 78, 78);
         transition-property: padding-left, padding-right, padding-top, box-shadow;
         transition-duration: 0.3s;
         transition-timing-function: ease-out;
-        // border-radius: 2px;
         margin-right: 7px;
 
         &:hover {
@@ -58,7 +51,6 @@ $red: rgb(220, 78, 78);
         margin-top: 30px;
         width: 100%;
         height: 300px;
-        // background-color: $white;
         background-color: rgb(0, 0, 0);
 
         .linkage {
@@ -67,7 +59,6 @@ $red: rgb(220, 78, 78);
             height: 30px;
             z-index: 0;
             position: absolute;
-            // background-color: blue;
         }
 
         .top {
@@ -76,16 +67,13 @@ $red: rgb(220, 78, 78);
             height: 20%;
             background-color: rgb(27, 27, 27);
             border: solid 2px $white;
-            // background-color: rgb(221, 220, 203);
             display: flex;
-            // gap: 10px;
             align-items: center;
             justify-content: flex-start;
             border-radius: 3px 3px 0px 0px;
 
             a {
                 text-decoration: none;
-                // color: rgb(28, 28, 28);
                 color: $white;
             }
 
@@ -133,7 +121,6 @@ $red: rgb(220, 78, 78);
             height: 80%;
             display: flex;
 
-            // background-color: $white;
             background-color: rgb(22, 22, 22);
             border: solid $white 2px;
             border-top: 0;
@@ -145,7 +132,6 @@ $red: rgb(220, 78, 78);
                 justify-content: center;
                 width: 55%;
                 height: 100%;
-                // background-color: blue;
                 border: 2px dashed rgb(192, 192, 177);
                 border-left: 0;
                 border-top: 0;
@@ -163,14 +149,12 @@ $red: rgb(220, 78, 78);
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
-                // background-color: green;
                 overflow-y: scroll;
 
                 .readme {
                     margin-top: 10px;
                     margin-left: 8px;
                     padding-right: 8px;
-                    // color: rgb(30, 30, 30);
                     color: $white;
                     font-size: 0.8rem;
                     line-height: 20px;

@@ -1,21 +1,7 @@
-@use './styles/ResetStyles.scss';
-
-@font-face {
-  font-family: JetBrains;
-  src: url("./fonts/JetBrainsMono-Bold.ttf");
-}
-
-@font-face {
-  font-family: JetBrainsBold;
-  src: url("./fonts/JetBrainsMonoNL-ExtraBold.ttf");
-}
-
-$white: rgb(246, 245, 239);
-$extraWhite: rgb(248, 248, 240);
-$gray: #131313;
-$darkGray: rgb(0, 0, 0);
-$blue: rgb(241, 241, 241);
-$red: rgb(220, 78, 78);
+@use './styles/resetStyles.scss';
+@use './styles/assets.scss';
+@use './styles/theme.scss' as *;
+@use './styles/globalStyles.scss';
 
 body {
   background-color: $gray;
@@ -35,36 +21,4 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.header1 {
-  margin-top: 35px;
-  font-size: 34px;
-  margin-bottom: 45px;
-}
-
-.header2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.header3 {
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-.lastLi {
-  margin-bottom: 0px;
-}
-
-.paragraph {
-  font-size: 13px;
-  font-weight: 200;
-  margin-bottom: 10px;
-  line-height: 25px;
 }
