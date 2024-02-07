@@ -1,12 +1,7 @@
 import './Header.scss';
-import { useState, useCallback } from "react";
-
-const cloverPic = "/images/clover.png";
+import { cloverPic } from '../../static';
 
 function Header() {
-  const [hover, setHover] = useState(false);
-  const mouseOver = useCallback(() => {}, []);
-
   return (
     <div className="titleName">
       <div className="clover">

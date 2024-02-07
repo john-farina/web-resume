@@ -1,18 +1,17 @@
+import './LanguagesCard.scss';
 import CardContainer from "../components/CardContainer";
 import LanguageIcon from "./LanguageIcon";
-import './LanguagesCard.scss';
-
-const sassIcon = "/images/sass.png";
-const tailwindIcon = "/images/Tailwind.png";
-const nextJsIcon = "/images/nextJsIcon.png";
-const MuiIcon = "/images/MuiIcon.png";
-const PrismaIcon = "/images/PrismaIcon.png";
-const TypescriptIcon = "/images/TypescriptIcon.png";
-const GraphQLIcon = "/images/GraphQLIcon.png";
-
-
-const railsLogo = "/images/rails-icon.png";
-const rubyLogo = "/images/ruby.png";
+import { 
+    sassIcon,
+    TypescriptIcon,
+    PrismaIcon,
+    GraphQLIcon,
+    railsLogo,
+    rubyLogo,
+    nextJsIcon,
+    MuiIcon,
+    tailwindIcon
+} from "../../../../static";
 
 function LanguagesCard() {
     return (

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./ProjectCard.scss";
 
-const githubIcon = "/images/gtihub.png";
+import { githubIcon } from "../../../../../static";
 
 interface Props {
     title: string;

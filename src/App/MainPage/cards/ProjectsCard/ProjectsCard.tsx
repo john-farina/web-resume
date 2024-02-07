@@ -1,22 +1,23 @@
 import { ProjectCard } from "../components";
 import CardContainer from "../components/CardContainer";
 
-const soundscapeImage = "/images/projects/soundscapes-intro.gif";
-const snakeImage = "/images/projects/playing-snake-2.gif";
-const tamagotchiImage = "/images/projects/Tamgotchi-Intro.gif";
-const calculatorImage = "/images/projects/pocketCalc.gif";
-const zoltarImage = "/images/projects/ZoltarFirst.gif";
-const magicBallImage = "/images/projects/8Ball-Opening (1).gif";
-const etchaImage = "/images/projects/EtchaDrawReset.gif";
-const ticTacImage = "/images/projects/Win-TicTacToe.gif";
-
+import {
+    soundscapeImage,
+    snakeImage,
+    tamagotchiImage,
+    calculatorImage,
+    zoltarImage,
+    magicBallImage,
+    etchaImage,
+    ticTacImage
+} from "../../../../static";
 
 function ProjectsCard() {
     return (
         <CardContainer>
             <>
                 <h2 className="header2">Projects</h2>
-                
+
                 <h3 className="header3 ">Full Stack:</h3>
 
                 <ul>
