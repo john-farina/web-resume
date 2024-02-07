@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import "./ProjectCard.scss";
 
 const githubIcon = "/images/gtihub.png";
 
@@ -59,7 +60,7 @@ function ProjectCard({
     }
 
     return (
-        <div className="newTextContainer">
+        <div className="projectContainer">
             <p className="paragraph">
                 <a
                     onMouseOver={() => {

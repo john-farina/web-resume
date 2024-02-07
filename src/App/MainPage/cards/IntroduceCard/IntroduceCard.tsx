@@ -1,14 +1,15 @@
-import { useEffect, useState } from 'react';
-// import './IntroduceCard.scss';
+import { useCallback, useEffect, useState } from 'react';
+import CardContainer from '../components/CardContainer';
+import HeaderButton from './HeaderButton';
+import './IntroduceCard.scss';
 const resume = '/images/darkModeResume.pdf';
 
 function IntroduceCard() {
     let [titleClass, changeTitleClass] = useState(" ");
     let [titleContent, changeTitleContent] = useState("Hello World!");
 
-    function loadDataOnce() {
+    const loadDataOnce = useCallback((): void => {
         changeTitleContent("Hello World!");
-
         changeTitleClass(" forwardType");
 
         setTimeout(() => {
@@ -20,15 +21,15 @@ function IntroduceCard() {
                 changeTitleClass(" reType");
             }, 1900);
         }, 2300);
-    }
+    }, [])
 
     useEffect(() => {
         loadDataOnce();
     }, []);
 
     return (
-        <section id="card1" className="card">
-            <div className="cardContents">
+        <CardContainer>
+            <>
                 <h2 id="typeText" className={"header2 firstHeader2 " + titleClass}>
                     {titleContent}
                 </h2>
@@ -38,36 +39,26 @@ function IntroduceCard() {
                 </p>
 
                 <p className="introBtns">
-                    <a
+                    <HeaderButton
                         href={resume}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="introButton"
-                        // onClick={() => gaEventTracker("Resume Btn")}
                     >
                         resume
-                    </a>{" "}
-                    •{" "}
-                    <a
+                    </HeaderButton>
+                    {" "}•{" "}
+                    <HeaderButton
                         href="mailto: johnfarina8@gmail.com"
-                        className="introButton"
-                        // onClick={() => gaEventTracker("Email Btn")}
                     >
                         email
-                    </a>{" "}
-                    •{" "}
-                    <a
+                    </HeaderButton>
+                    {" "}•{" "}
+                    <HeaderButton
                         href="https://github.com/john-farina"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="introButton"
-                        // onClick={() => gaEventTracker("Github Btn")}
                     >
                         github
-                    </a>
+                    </HeaderButton>
                 </p>
-            </div>
-        </section>
+            </>
+        </CardContainer>
     );
 }
 

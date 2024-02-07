@@ -1,7 +1,6 @@
-import React from 'react';
-import './ResetStyles.scss';
 import './App.scss';
 import Head from './Head';
+import Header from './Header';
 import MainPage from './MainPage';
 
 function App() {
@@ -9,6 +8,7 @@ function App() {
     <>
       <Head />
       <main className="container">
+        <Header />
         <MainPage />
       </main>
     </>

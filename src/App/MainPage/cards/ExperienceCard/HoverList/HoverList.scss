@@ -1,0 +1,41 @@
+$white: rgb(246, 245, 239);
+$extraWhite: rgb(248, 248, 240);
+$gray: #131313;
+$darkGray: rgb(0, 0, 0);
+$blue: rgb(241, 241, 241);
+$red: rgb(220, 78, 78);
+
+.hoverList {
+    position: relative;
+
+    .alertPopUp {
+        cursor: default;
+        display: flex;
+        pointer-events: none;
+        opacity: 0%;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        width: 100%;
+        background-color: $red;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: -45px;
+        transition: opacity 0.3s;
+
+        .cardText {
+            font-size: 0.8rem;
+            margin-left: 3px;
+            line-height: 15px;
+        }
+    }
+
+    .redColor {
+        color: $red;
+    }
+
+    .companyNameText {
+        position: relative;
+        cursor: default;
+    }
+}

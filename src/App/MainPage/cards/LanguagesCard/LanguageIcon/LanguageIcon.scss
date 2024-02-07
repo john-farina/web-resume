@@ -1,0 +1,196 @@
+.icon {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 30%);
+    transition: margin-top 0.2s ease-out, box-shadow 0.2s;
+
+    .all-icons {
+        transition: margin-top 0.5s;
+    }
+
+    .popUpMenu {
+        display: none;
+        position: absolute;
+        z-index: 3;
+        width: 160px;
+        height: 30px;
+        background-color: rgba(19, 19, 19, 95%);
+        top: 0;
+        margin-top: -45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // transition: margin-top 0.6s;
+        font-size: 0.8rem;
+        pointer-events: none;
+
+        .popUpText {
+            text-align: center;
+            // font-size: 0.8rem;
+        }
+
+        .popUpTri {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: -6px;
+            width: 0;
+            height: 0;
+            border-left: 9px solid rgba(0, 0, 0, 0%);
+            border-right: 9px solid rgba(0, 0, 0, 0%);
+            border-top: 7px solid rgba(19, 19, 19, 95%);
+        }
+    }
+
+    &:hover {
+        margin-top: -2px;
+        box-shadow: rgba(0, 0, 0, 50%) 0px 5px 8px;
+
+        .all-icons {
+            margin-top: -5px;
+            filter: drop-shadow(rgba(255, 255, 255, 50%) 0px 5px 2px) invert(100%);
+        }
+
+        // .popUpMenu {
+        //   margin-top: -45px;
+        // }
+    }
+}
+
+.popUpAnimate {
+    animation-name: popUpMenu;
+    animation-duration: 0.4s;
+}
+
+.popDownAnimate {
+    animation-name: popDownMenu;
+    animation-duration: 0.2s;
+}
+
+@keyframes popUpMenu {
+    0% {
+        font-size: 0.1rem;
+
+        margin-top: 10px;
+        scale: 0%;
+        // width: 50px;
+        opacity: 0%;
+    }
+
+    100% {
+        font-size: 0.8rem;
+
+        margin-top: -45px;
+        scale: 100%;
+        opacity: 100%;
+    }
+}
+
+@keyframes popDownMenu {
+    0% {
+        font-size: 0.8rem;
+        margin-top: -45px;
+        scale: 100%;
+        opacity: 100%;
+    }
+
+    80% {
+        opacity: 0%;
+    }
+
+    100% {
+        font-size: 0.1rem;
+        margin-top: 10px;
+        scale: 0%;
+
+        opacity: 0%;
+    }
+}
+
+
+// Icon Classes 
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js-square,
+.fa-node,
+.fa-react {
+  font-size: 3.3rem;
+}
+
+.fa-html5 {
+  color: rgb(201, 63, 63);
+}
+
+.fa-css3-alt {
+  color: rgb(47, 47, 239);
+}
+
+.fa-js-square {
+  color: rgb(229, 229, 95);
+}
+
+.fa-node {
+  color: rgb(62, 125, 62);
+}
+
+.fa-react {
+  color: rgb(61, 207, 240);
+}
+
+.photoshop,
+.audition {
+  height: 60px;
+}
+
+.ableton {
+  width: 66px;
+}
+
+.premiere {
+  height: 66px;
+}
+
+.rails {
+  width: 45px;
+}
+
+.ruby {
+  width: 52px;
+}
+
+.sass {
+  width: 60px;
+}
+
+.tailwind {
+  width: 60px;
+}
+
+.nextJs {
+  width: 55px;
+  filter: invert(30%);
+}
+
+.typescript {
+  width: 60px;
+}
+
+.mui {
+  width: 60px;
+}
+
+.prisma {
+  width: 60px;
+}
+
+.graphql {
+  width: 60px;
+}

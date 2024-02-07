@@ -1,5 +1,6 @@
-// import './LanguagesCard.scss';
+import CardContainer from "../components/CardContainer";
 import LanguageIcon from "./LanguageIcon";
+import './LanguagesCard.scss';
 
 const sassIcon = "/images/sass.png";
 const tailwindIcon = "/images/Tailwind.png";
@@ -15,10 +16,8 @@ const rubyLogo = "/images/ruby.png";
 
 function LanguagesCard() {
     return (
-        <div id="card4" className="card">
-            <div className="cardBack cardBack4"></div>
-
-            <div className="cardContents">
+        <CardContainer>
+            <>
                 <h2 className="header2">Languages, Frameworks, & Libraries:</h2>
 
                 <div id="icon-container">
@@ -116,8 +115,8 @@ function LanguagesCard() {
                         />
                     </div>
                 </div>
-            </div>
-        </div>
+            </>
+        </CardContainer>
     );
 }
 

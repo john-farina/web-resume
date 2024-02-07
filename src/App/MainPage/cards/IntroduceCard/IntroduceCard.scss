@@ -1,1 +1,81 @@
-.test {}
+$white: rgb(246, 245, 239);
+$extraWhite: rgb(248, 248, 240);
+$gray: #131313;
+$darkGray: rgb(0, 0, 0);
+$blue: rgb(241, 241, 241);
+$red: rgb(220, 78, 78);
+
+#typeText {
+    width: 173px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.14em solid $blue;
+
+    &:hover {
+        border-right: 0.14em solid $red;
+    }
+}
+
+.forwardType {
+    width: 170px;
+    animation: typing 1.5s steps(12) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+.backspaceType {
+    width: 170px;
+    animation: typingBack 0.7s steps(7) 1s 1 normal both,
+        blink 1s steps(1) infinite;
+}
+
+.reType {
+    width: 85px;
+    animation: reTyping 0.1s steps(1) 1 normal both, blink 1s steps(1) infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0px;
+    }
+
+    90% {
+        width: 173px;
+    }
+
+    100% {
+        width: 173px;
+    }
+}
+
+@keyframes typingBack {
+    0% {
+        width: 171px;
+    }
+
+    90% {
+        width: 73px;
+    }
+
+    100% {
+        width: 73px;
+    }
+}
+
+@keyframes reTyping {
+    0% {
+        width: 72px;
+    }
+
+    70% {
+        width: 87px;
+    }
+
+    100% {
+        width: 87px;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

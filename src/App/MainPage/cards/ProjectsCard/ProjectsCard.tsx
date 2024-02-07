@@ -1,4 +1,5 @@
 import { ProjectCard } from "../components";
+import CardContainer from "../components/CardContainer";
 
 const soundscapeImage = "/images/projects/soundscapes-intro.gif";
 const snakeImage = "/images/projects/playing-snake-2.gif";
@@ -12,10 +13,10 @@ const ticTacImage = "/images/projects/Win-TicTacToe.gif";
 
 function ProjectsCard() {
     return (
-        <section id="card2" className="card">
-            <div className="cardContents projectCont">
+        <CardContainer>
+            <>
                 <h2 className="header2">Projects</h2>
-
+                
                 <h3 className="header3 ">Full Stack:</h3>
 
                 <ul>
@@ -135,8 +136,8 @@ function ProjectsCard() {
                         />
                     </li>
                 </ul>
-            </div>
-        </section>
+            </>
+        </CardContainer>
     );
 }
 
