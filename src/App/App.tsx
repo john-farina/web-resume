@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.scss';
 import './ResetStyles.scss';
+import './App.scss';
 import Head from './Head';
 import MainPage from './MainPage';
 

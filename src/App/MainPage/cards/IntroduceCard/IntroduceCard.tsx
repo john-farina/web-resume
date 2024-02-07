@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 // import './IntroduceCard.scss';
-// import resume from '../../../images/darkModeResume.pdf';
+const resume = '/images/darkModeResume.pdf';
 
 function IntroduceCard() {
     let [titleClass, changeTitleClass] = useState(" ");
@@ -39,7 +39,7 @@ function IntroduceCard() {
 
                 <p className="introBtns">
                     <a
-                        // href={resume}
+                        href={resume}
                         target="_blank"
                         rel="noreferrer"
                         className="introButton"

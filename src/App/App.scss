@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "JetBrains Mono Bold";
+  font-family: JetBrains;
   src: url("./fonts/JetBrainsMono-Bold.ttf");
 }
 @font-face {
@@ -35,7 +35,7 @@ body {
   background-color: $gray;
   margin: 0;
   width: 100%;
-  font-family: "JetBrains Mono Bold", Courier, monospace;
+  font-family: JetBrains;
   color: $white;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;

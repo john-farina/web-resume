@@ -1,5 +1,6 @@
 import { useRef } from "react";
-// import githubIcon from "../img/gtihub.png";
+
+const githubIcon = "/images/gtihub.png";
 
 interface Props {
     title: string;
@@ -37,7 +38,7 @@ function ProjectCard({
     function gitHubLogoRender() {
         if (githubLink) {
             return (
-                <a href={githubLink}>
+                <a href={githubLink} target="_blank">
                     <div
                         className="gitHubLogo"
                         onClick={() => {
@@ -46,7 +47,7 @@ function ProjectCard({
                     >
                         <img
                             className="projectIcon"
-                            // src={githubIcon}
+                            src={githubIcon}
                             alt=""
                         />
                     </div>
@@ -93,18 +94,7 @@ function ProjectCard({
             >
                 <div className="linkage"></div>
                 <div className="top">
-                    {/* <a href={githubLink}>
-            <div
-              className="gitHubLogo"
-              onClick={() => {
-                gaEventTracker(`${title}: GITHUB CLICK`);
-              }}
-            >
-              <img className="projectIcon" src={githubIcon} alt="" />
-            </div>
-          </a> */}
                     {gitHubLogoRender()}
-
                     <a
                         href={liveDemoLink}
                         onClick={() => {
