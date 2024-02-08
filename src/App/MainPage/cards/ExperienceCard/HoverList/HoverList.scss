@@ -6,8 +6,7 @@
     .alertPopUp {
         cursor: default;
         display: flex;
-        visibility: hidden;
-        opacity: 0%;
+        opacity: 0;
         align-items: center;
         justify-content: flex-start;
         position: absolute;
@@ -16,7 +15,7 @@
         padding-top: 8px;
         padding-bottom: 8px;
         margin-top: -55px;
-        transition: opacity 0.3s;
+        transition: opacity 0.4s ease;
         z-index: 5;
 
         .cardText {
@@ -46,19 +45,19 @@
         }
     }
 
+    .companyNameText {
+        position: relative;
+        cursor: default;
+        transition: color 0.4s ease;
+    }
+
     &.open {
         .alertPopUp {
-            visibility: visible;
-            opacity: 100%;
+            opacity: 1;
         }
 
         .companyNameText {
             color: $red;
         }
-    }
-
-    .companyNameText {
-        position: relative;
-        cursor: default;
     }
 }
