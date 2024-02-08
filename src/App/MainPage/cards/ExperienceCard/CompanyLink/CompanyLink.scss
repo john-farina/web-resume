@@ -1,10 +1,36 @@
 @use '../../../../styles/theme.scss' as *;
 
+
 .listLink {
     color: $white;
     text-decoration: underline;
+    padding: 1px 4px;
+    margin-left: -2px;
+    transition: background-color 0.4s ease;
 
     &:hover {
         text-decoration: none;
+
+        &.swivvel {
+            background-color: $swivvel
+        }
+
+        &.bedroomProducer {
+            background-color: $bedroomProducer
+        }
+    }
+}
+
+.atSign {
+    transition: color 0.4s ease;
+
+    &.hovering {
+        &.swivvel {
+            color: $swivvel
+        }
+
+        &.bedroomProducer {
+            color: $bedroomProducer
+        }
     }
 }

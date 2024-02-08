@@ -10,17 +10,19 @@ function ExperienceCard() {
 
         <li>
           <CompanyLink
-            title="Jr FullStack @ Swivvel"
+            title="Jr FullStack"
             link="https://swivvel.io"
             visibleLink="swivvel.io"
+            company="swivvel"
           />
         </li>
 
         <li>
           <CompanyLink
-            title="FullStack Internship @ Bedroom Producer"
+            title="FullStack Internship"
             link="https://bedroomproducer.io"
             visibleLink="bedroomproducer.io"
+            company="bedroomProducer"
           />
         </li>
       </ul>

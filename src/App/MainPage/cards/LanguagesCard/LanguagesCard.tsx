@@ -10,7 +10,9 @@ import {
     rubyLogo,
     nextJsIcon,
     MuiIcon,
-    tailwindIcon
+    tailwindIcon,
+    cSharpLogo,
+    swiftIcon
 } from "../../../../static";
 
 function LanguagesCard() {
@@ -39,11 +41,22 @@ function LanguagesCard() {
                     placeholder="# ruby"
                 />
                 <LanguageIcon
+                    iconClass={null}
+                    image={TypescriptIcon}
+                    classes="typescript"
+                    placeholder="type { TypeScript }"
+                />
+                <LanguageIcon
+                    image={cSharpLogo}
+                    classes="cSharp"
+                    placeholder="void C#()"
+                    iconClass={null}
+                />
+                <LanguageIcon
                     image={null}
                     iconClass="fa-brands fa-react"
                     placeholder=" < React />"
                 />
-
                 <LanguageIcon
                     image={railsLogo}
                     iconClass={null}
@@ -51,12 +64,11 @@ function LanguagesCard() {
                     placeholder="<%= ruby_on_rails %>"
                 />
                 <LanguageIcon
+                    image={swiftIcon}
+                    classes="swift"
+                    placeholder="func Swift()"
                     iconClass={null}
-                    image={TypescriptIcon}
-                    classes="typescript"
-                    placeholder="type { TypeScript }"
                 />
-
                 <LanguageIcon
                     iconClass={null}
                     image={nextJsIcon}
@@ -75,6 +87,7 @@ function LanguagesCard() {
                     classes="graphql"
                     placeholder="query { GraphQL }"
                 />
+                {/* STYLES */}
                 <LanguageIcon
                     iconClass={null}
                     image={sassIcon}
@@ -85,7 +98,7 @@ function LanguagesCard() {
                     image={MuiIcon}
                     iconClass={null}
                     classes="mui"
-                    placeholder={`<MaterialUI size="small">`}
+                    placeholder={`<MaterialUI size="medium">`}
                 />
                 <LanguageIcon
                     image={tailwindIcon}

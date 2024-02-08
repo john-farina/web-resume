@@ -1,3 +1,5 @@
+@use './theme.scss' as *;
+
 .header1 {
     margin-top: 35px;
     font-size: 34px;
@@ -28,4 +30,10 @@ li {
     font-weight: 200;
     margin-bottom: 10px;
     line-height: 25px;
+}
+
+@media screen and (max-width: $mobileWidth) {
+    .header1 {
+        margin-left: -9px;
+    }
 }

@@ -11,17 +11,21 @@ const zoltarImage = "/images/projects/ZoltarFirst.gif";
 const magicBallImage = "/images/projects/8Ball-Opening (1).gif";
 const etchaImage = "/images/projects/EtchaDrawReset.gif";
 const ticTacImage = "/images/projects/Win-TicTacToe.gif";
+const dronesImage = "/images/projects/dronesScreenshot.jpg";
+const wishesImage = "/images/projects/wishesScreenshot.png";
 
 // ------ Tech Icons ------
 const sassIcon = "/images/sass.png";
 const tailwindIcon = "/images/Tailwind.png";
-const nextJsIcon = "/images/nextJsIcon.png";
+const nextJsIcon = "/images/nextJsIcon.svg";
 const MuiIcon = "/images/MuiIcon.png";
 const PrismaIcon = "/images/PrismaIcon.png";
 const TypescriptIcon = "/images/TypescriptIcon.png";
 const GraphQLIcon = "/images/GraphQLIcon.png";
 const railsLogo = "/images/rails-icon.png";
 const rubyLogo = "/images/ruby.png";
+const cSharpLogo = "/images/cSharpIcon.png";
+const swiftIcon = "/images/swiftIcon.png";
 
 export {
     cloverPic,
@@ -34,6 +38,8 @@ export {
     GraphQLIcon,
     railsLogo,
     rubyLogo,
+    cSharpLogo,
+    swiftIcon,
     githubIcon,
     GamePic,
     soundscapeImage,
@@ -43,5 +49,7 @@ export {
     zoltarImage,
     magicBallImage,
     etchaImage,
-    ticTacImage
+    ticTacImage,
+    dronesImage,
+    wishesImage
 }

@@ -109,9 +109,8 @@
                 z-index: 3;
                 font-size: 1.4rem;
                 margin-left: 10px;
-                transition: color 0.2s ease-in-out;
+
                 &:hover {
-                    color: $blue;
                     text-decoration: underline;
                 }
             }
