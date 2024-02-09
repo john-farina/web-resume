@@ -1,0 +1,46 @@
+@use '../styles/theme.scss' as *;
+
+.drones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 650px;
+    margin-bottom: 20px;
+    position: relative;
+
+    .backBtn {
+        position: fixed;
+        background-color: $white;
+        left: 0;
+        top: 0;
+        display: flex;
+        opacity: 0.6;
+
+        .arrow {
+            font-size: 15px;
+            margin-left: -2px;
+        }
+    }
+    
+    .informationContainer {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 200px;
+        position: relative;
+        border: 2px dashed $white;
+        padding: 15px;
+        box-sizing: border-box; // Add this line
+
+        .date {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: -10px;
+            margin-left: 20px;
+            background-color: $gray;
+            padding: 0 10px;
+        }
+    }
+}

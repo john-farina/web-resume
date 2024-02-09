@@ -1,5 +1,5 @@
 import './Header.scss';
-import { cloverPic } from '../../static';
+import { cloverPic } from '../../../static';
 
 function Header() {
   return (

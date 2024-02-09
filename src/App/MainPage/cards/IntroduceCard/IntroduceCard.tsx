@@ -54,7 +54,7 @@ function IntroduceCard() {
                     {titleContent}
                 </h2>
 
-                <div className="contentContainer">
+                <div className="introduceContentContainer">
                     <p className="paragraph">
                         I am a <b className="paragraph">FullStack Engineer</b> I'm self
                         taught, and went to school for Digital Art
