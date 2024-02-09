@@ -39,7 +39,7 @@ function ProjectCard({
     function gitHubLogoRender() {
         if (githubLink) {
             return (
-                <a href={githubLink} target="_blank">
+                <a href={githubLink} target="_blank" rel="noreferrer">
                     <div
                         className="gitHubLogo"
                         onClick={() => {
@@ -62,7 +62,7 @@ function ProjectCard({
     return (
         <div className="projectContainer">
             <p className="paragraph">
-                <a
+                <button
                     onMouseOver={() => {
                         CardHover();
                         // gaEventTracker(`${title}: HOVER`);
@@ -79,7 +79,7 @@ function ProjectCard({
                     className="textButton"
                 >
                     {title}
-                </a>
+                </button>
                 - {subtext}
             </p>
 
@@ -99,6 +99,7 @@ function ProjectCard({
                     <a
                         href={liveDemoLink}
                         target="_blank"
+                        rel="noreferrer"
                         onClick={() => {
                             //   gaEventTracker(`${title}: WEBSITE CLICK`);
                         }}

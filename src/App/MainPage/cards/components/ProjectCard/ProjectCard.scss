@@ -7,19 +7,14 @@
 
     .textButton {
         cursor: pointer;
-
+        border: none;
         position: relative;
         font-size: 0.9rem;
         font-weight: bolder;
         text-decoration: underline;
         background-color: $white;
         color: black;
-
-        padding-left: 3px;
-        padding-right: 3px;
-        padding-top: 1px;
-        padding-bottom: 1px;
-
+        padding: 3px 5px;
         transition-property: padding-left, padding-right, padding-top, box-shadow;
         transition-duration: 0.3s;
         transition-timing-function: ease-out;
