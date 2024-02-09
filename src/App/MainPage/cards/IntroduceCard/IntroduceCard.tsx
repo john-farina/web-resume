@@ -36,7 +36,7 @@ function IntroduceCard() {
 
     useEffect(() => {
         loadDataOnce();
-    }, []);
+    }, [loadDataOnce]);
 
     const colorClass = hovered ? "blue" : "red";
 
