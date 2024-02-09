@@ -1,6 +1,5 @@
 import './LanguagesCard.scss';
-import CardContainer from "../components/CardContainer";
-import LanguageIcon from "./LanguageIcon";
+import { CardContainer, LanguageIcon } from '../components';
 import {
     sassIcon,
     TypescriptIcon,

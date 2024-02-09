@@ -4,6 +4,10 @@
     justify-content: center;
     width: 100%;
 
+    .title {
+        pointer-events: none;
+    }
+
     .clover {
         position: absolute;
         margin-right: 10px;

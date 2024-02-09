@@ -111,19 +111,6 @@
   color: rgb(61, 207, 240);
 }
 
-.photoshop,
-.audition {
-  height: 60px;
-}
-
-.ableton {
-  width: 66px;
-}
-
-.premiere {
-  height: 66px;
-}
-
 .rails {
   width: 45px;
 }
@@ -167,4 +154,26 @@
 
 .graphql {
   width: 60px;
+}
+
+.photoshop,
+.audition, 
+.premiere {
+  height: 55px;
+}
+
+.ableton {
+  width: 60px;
+}
+
+.unity {
+  width: 65px;
+}
+
+.blender {
+  width: 55px;
+}
+
+.figma {
+  width: 66px;
 }

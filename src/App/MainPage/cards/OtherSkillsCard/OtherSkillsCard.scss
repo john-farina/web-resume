@@ -1,0 +1,12 @@
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.flex-grid > * {
+    flex:  1  0 auto;
+    max-width: 80px;
+    max-height: 80px;
+    margin: 7px;
+}
