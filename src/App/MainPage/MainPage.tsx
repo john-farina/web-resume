@@ -5,6 +5,7 @@ import {
     ExtrasCard, 
     IntroduceCard, 
     LanguagesCard, 
+    OtherSkillsCard, 
     ProjectsCard 
 } from './cards';
 
@@ -20,6 +21,7 @@ function MainPage() {
             <ExperienceCard />
             <TheLine />
             <LanguagesCard />
+            <OtherSkillsCard />
         </div>
     );
 }

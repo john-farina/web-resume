@@ -4,6 +4,16 @@ import HeaderButton from './HeaderButton';
 import './IntroduceCard.scss';
 const resume = '/images/darkModeResume.pdf';
 
+function Dot() {
+    return (
+        <span className="dot">
+            {" "}
+            •
+            {" "}
+        </span>
+    )
+}
+
 function IntroduceCard() {
     const [titleClass, changeTitleClass] = useState(" ");
     const [titleContent, changeTitleContent] = useState("Hello World!");
@@ -43,40 +53,38 @@ function IntroduceCard() {
                 >
                     {titleContent}
                 </h2>
-                
+
                 <div className="contentContainer">
                     <p className="paragraph">
                         I am a <b className="paragraph">FullStack Engineer</b> I'm self
                         taught, and went to school for Digital Art
                     </p>
 
-                    <p className="introBtns">
+                    <div className="introBtns">
                         <HeaderButton
                             href={resume}
                         >
                             resume
                         </HeaderButton>
-                        <span className="dot">
-                            {" "}
-                            •
-                            {" "}
-                        </span>
+                        <Dot />
                         <HeaderButton
-                            href="mailto: johnfarina8@gmail.com"
+                            href="mailto:johnfarina8@gmail.com"
                         >
                             email
                         </HeaderButton>
-                        <span className="dot">
-                            {" "}
-                            •
-                            {" "}
-                        </span>
+                        <Dot />
                         <HeaderButton
                             href="https://github.com/john-farina"
                         >
                             github
                         </HeaderButton>
-                    </p>
+                        <Dot />
+                        <HeaderButton
+                            href="https://www.linkedin.com/in/john-farina8/"
+                        >
+                            linkedin
+                        </HeaderButton>
+                    </div>
                 </div>
             </>
         </CardContainer>

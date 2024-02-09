@@ -27,6 +27,15 @@ const rubyLogo = "/images/ruby.png";
 const cSharpLogo = "/images/cSharpIcon.png";
 const swiftIcon = "/images/swiftIcon.png";
 
+// ------ Other Icons ------
+const photoshopIcon = '/images/photoshop.png';
+const premiereIcon = '/images/premiere.png';
+const auditionIcon = '/images/adobe-audition.png';
+const abletonIcon = '/images/ableton.jpeg';
+const figmaIcon = '/images/figma.png';
+const unityIcon = '/images/unity.png';
+const blenderIcon = '/images/blender.png';
+
 export {
     cloverPic,
     sassIcon,
@@ -51,5 +60,12 @@ export {
     etchaImage,
     ticTacImage,
     dronesImage,
-    wishesImage
+    wishesImage,
+    photoshopIcon,
+    premiereIcon,
+    auditionIcon,
+    abletonIcon,
+    figmaIcon,
+    unityIcon,
+    blenderIcon
 }
