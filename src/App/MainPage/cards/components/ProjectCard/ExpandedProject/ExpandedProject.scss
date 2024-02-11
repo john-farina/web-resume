@@ -1,0 +1,108 @@
+@use '../../../../../styles/theme.scss' as *;
+
+.projectInformation {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .projectTop {
+        z-index: 1;
+        width: 100%;
+        height: 50px;
+        border: solid 2px $white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        // border-radius: 3px 3px 0px 0px;
+        
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+
+        .gitHubLogo {
+            cursor: pointer;
+            z-index: 3;
+            height: 40px;
+            width: 40px;
+            background-color: rgb(231, 229, 223);
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+
+            .projectIcon {
+                filter: invert(0%);
+                width: 70%;
+            }
+
+            &:hover {
+                .projectIcon {
+                    filter: invert(100%);
+                }
+
+                background-color: rgb(17, 17, 17);
+            }
+        }
+
+        .projectTitle {
+            cursor: pointer;
+            z-index: 3;
+            font-size: 1.4rem;
+            margin-left: 8px;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        border: solid 2px $white;
+        border-top: 0;
+        // border-radius: 0px 0px 3px 3px;
+        max-height: 200px;
+
+        .imageContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 55%;
+            border: 2px dashed rgba($white, 0.2);
+            border-left: 0;
+            border-top: 0;
+            border-bottom: 0;
+            overflow-y: hidden;
+
+            .projectImage {
+                border-radius: 5px;
+                width: 80%;
+            }
+        }
+
+        .projTextContainer {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            overflow-y: scroll;
+            max-height: 200px;
+
+            .readme {
+                margin-top: 10px;
+                margin-left: 8px;
+                padding-right: 8px;
+                color: $white;
+                font-size: 0.8rem;
+                line-height: 20px;
+            }
+        }
+    }
+}

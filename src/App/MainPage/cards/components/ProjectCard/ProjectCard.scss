@@ -2,31 +2,36 @@
 
 .projectContainer {
     display: flex;
-    width: 98%;
+    width: 100%;
     position: relative;
+    margin-bottom: 30px;
 
-    .textButton {
-        cursor: pointer;
-        border: none;
-        position: relative;
-        font-size: 0.9rem;
-        font-weight: bolder;
-        text-decoration: underline;
-        background-color: $white;
-        color: black;
-        padding: 3px 5px;
-        transition-property: padding-left, padding-right, padding-top, box-shadow;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-        margin-right: 7px;
 
-        &:hover {
-            box-shadow: -2px 2px 10px rgba(0, 0, 0, 30%);
-        }
+    .newProjectContainer {
+        width: 100%;
 
-        &:active {
-            background-color: black;
-            color: $white;
+        .viewMoreBox {
+            border: 2px solid $white;
+            width: 100%;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-top: 0;
+            background-color: rgba($white, 0.1);
+            transition: background-color 0.15s ease-in-out;
+
+            .paragraph {
+                margin: 0;
+                font-size: .7rem;
+                opacity: 0.8;
+            }
+
+            &:hover {
+                background-color: $white;
+                color: $gray;
+            }
         }
     }
 
@@ -34,125 +39,5 @@
         font-size: 0.9rem;
         line-height: 30px;
         padding-right: 2px;
-    }
-
-    .dropDown {
-        display: flex;
-        flex-direction: column;
-        display: none;
-        position: absolute;
-        z-index: 6;
-        top: 0;
-        margin-top: 30px;
-        width: 100%;
-        height: 300px;
-        background-color: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(10px);
-
-        .linkage {
-            margin-top: -15px;
-            width: 160px;
-            height: 30px;
-            z-index: 0;
-            position: absolute;
-        }
-
-        .top {
-            z-index: 1;
-            width: 100%;
-            height: 20%;
-            border: solid 2px rgba($white, 0.4);
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            border-radius: 3px 3px 0px 0px;
-
-            a {
-                text-decoration: none;
-                color: $white;
-            }
-
-            .gitHubLogo {
-                cursor: pointer;
-                z-index: 3;
-                height: 40px;
-                width: 40px;
-                background-color: rgb(231, 229, 223);
-                margin-left: 10px;
-                border-radius: 3px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                .projectIcon {
-                    filter: invert(0%);
-                    width: 70%;
-                }
-
-                &:hover {
-                    .projectIcon {
-                        filter: invert(100%);
-                    }
-
-                    background-color: rgb(17, 17, 17);
-                }
-            }
-
-            .projectTitle {
-                cursor: pointer;
-                z-index: 3;
-                font-size: 1.4rem;
-                margin-left: 10px;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-
-        .bottom {
-            width: 100%;
-            height: 80%;
-            display: flex;
-            border: solid 2px rgba($white, 0.4);
-            border-top: 0;
-            border-radius: 0px 0px 3px 3px;
-
-            .imageContainer {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 55%;
-                height: 100%;
-                border: 2px dashed rgba($white, 0.2);
-                border-left: 0;
-                border-top: 0;
-                border-bottom: 0;
-
-                .projectImage {
-                    border-radius: 5px;
-                    width: 80%;
-                }
-            }
-
-            .projTextContainer {
-                width: 45%;
-                height: 100%;
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
-                overflow-y: scroll;
-
-                .readme {
-                    margin-top: 10px;
-                    margin-left: 8px;
-                    padding-right: 8px;
-                    color: $white;
-                    font-size: 0.8rem;
-                    line-height: 20px;
-                }
-            }
-        }
     }
 }
