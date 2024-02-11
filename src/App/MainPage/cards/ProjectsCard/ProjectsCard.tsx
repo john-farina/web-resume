@@ -7,7 +7,6 @@ import {
     snakeImage,
     tamagotchiImage,
     calculatorImage,
-    zoltarImage,
     dronesImage,
     wishesImage,
     GamePic
