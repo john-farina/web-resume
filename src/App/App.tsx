@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import './App.scss';
 import Head from './Head';
 import MainPage from './MainPage';
@@ -7,7 +7,7 @@ import DronesBlog from './DronesBlog';
 
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <MainPage />,
