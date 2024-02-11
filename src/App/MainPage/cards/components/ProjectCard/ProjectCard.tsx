@@ -11,6 +11,7 @@ interface Props {
     githubLink: string | null;
     liveDemoLink: string;
     readmeIntro: string;
+    dontOpenNewWindow?: boolean;
 }
 
 function ProjectCard({
@@ -21,6 +22,7 @@ function ProjectCard({
     githubLink,
     liveDemoLink,
     readmeIntro,
+    dontOpenNewWindow = false,
 }: Props) {
     const dropDown = useRef<HTMLDivElement>(null);
 
@@ -98,7 +100,9 @@ function ProjectCard({
                     {gitHubLogoRender()}
                     <a
                         href={liveDemoLink}
-                        target="_blank"
+                        target={
+                            !dontOpenNewWindow ? "_blank" : "_self"
+                        }
                         rel="noreferrer"
                         onClick={() => {
                             //   gaEventTracker(`${title}: WEBSITE CLICK`);
