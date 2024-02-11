@@ -36,6 +36,7 @@ const figmaIcon = '/images/figma.png';
 const unityIcon = '/images/unity.png';
 const blenderIcon = '/images/blender.png';
 const backIcon = '/images/backIcon.svg';
+const resume = '/images/johnFarinaResume.pdf';
 
 // ------ Blog ------
 const droneV1Image = '/images/blog/DroneModelOne.JPG';
@@ -77,5 +78,6 @@ export {
     backIcon,
     droneV1Image,
     testingSingleplayerVideo,
-    testingMultiplayerVideo
+    testingMultiplayerVideo,
+    resume
 }
