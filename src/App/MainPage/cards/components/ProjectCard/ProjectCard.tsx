@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./ProjectCard.scss";
 
 import { githubIcon } from "../../../../../static";
+import { Link } from "react-router-dom";
 
 interface Props {
     title: string;
@@ -11,7 +12,7 @@ interface Props {
     githubLink: string | null;
     liveDemoLink: string;
     readmeIntro: string;
-    dontOpenNewWindow?: boolean;
+    samePageLink?: boolean;
 }
 
 function ProjectCard({
@@ -22,7 +23,7 @@ function ProjectCard({
     githubLink,
     liveDemoLink,
     readmeIntro,
-    dontOpenNewWindow = false,
+    samePageLink = false,
 }: Props) {
     const dropDown = useRef<HTMLDivElement>(null);
 
@@ -67,7 +68,6 @@ function ProjectCard({
                 <button
                     onMouseOver={() => {
                         CardHover();
-                        // gaEventTracker(`${title}: HOVER`);
                     }}
                     onMouseLeave={() => {
                         CardLeave();
@@ -98,18 +98,24 @@ function ProjectCard({
                 <div className="linkage"></div>
                 <div className="top">
                     {gitHubLogoRender()}
-                    <a
-                        href={liveDemoLink}
-                        target={
-                            !dontOpenNewWindow ? "_blank" : "_self"
-                        }
-                        rel="noreferrer"
-                        onClick={() => {
-                            //   gaEventTracker(`${title}: WEBSITE CLICK`);
-                        }}
-                    >
-                        <p className="projectTitle">{title}</p>
-                    </a>
+                    {!samePageLink ?
+                        (<a
+                            href={liveDemoLink}
+                            target={
+                                !samePageLink ? "_blank" : "_self"
+                            }
+                            rel="noreferrer"
+                            onClick={() => {
+                                //   gaEventTracker(`${title}: WEBSITE CLICK`);
+                            }}
+                        >
+                            <p className="projectTitle">{title}</p>
+                        </a>)
+                        :
+                        (<Link className="projectTitle" to={liveDemoLink}>
+                            {title}
+                        </Link>)
+                    }
                 </div>
 
                 <div className="bottom">

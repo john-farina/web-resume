@@ -4,14 +4,15 @@ import { TheLine } from "../components";
 import Post from "./Post";
 import { backIcon, droneV1Image, testingMultiplayerVideo, testingSingleplayerVideo } from "../../static";
 import VideoPlayer from "./VideoPlayer";
+import { Link } from "react-router-dom";
 
 function DronesBlog() {
     return (
         <div className="drones-container">
-            <a className="backBtn" href="/">
+            <Link className="backBtn" to="/">
                 <img alt="back" className="backBtnIcon" src={backIcon} />
                 <p className="btnText">back</p>
-            </a>
+            </Link>
             <Header />
             <p className="paragraph">
                 Since I'm building Battle Drones for VR and most people don't have
