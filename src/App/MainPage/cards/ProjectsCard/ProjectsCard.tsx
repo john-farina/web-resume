@@ -1,5 +1,6 @@
 import { ProjectCard } from "../components";
 import CardContainer from "../components/CardContainer";
+import './ProjectsCard.scss';
 
 import {
     soundscapeImage,
@@ -9,16 +10,55 @@ import {
     zoltarImage,
     magicBallImage,
     etchaImage,
-    ticTacImage
+    ticTacImage,
+    dronesImage,
+    wishesImage,
+    GamePic
 } from "../../../../static";
 
 function ProjectsCard() {
     return (
         <CardContainer title="Projects">
             <>
-                <h3 className="header3 ">Full Stack:</h3>
+                <h3 className="header3 ">Current Side Projects:</h3>
+                <ul className="unordered">
+                    <li>
+                        <ProjectCard
+                            title="Drone Battles"
+                            subtext="(Coming soon) A VR experience where you can fly drones using the controller, and battle with your friends."
+                            readmeIntro="This is my real attempt to create a fully functional VR game designed for the quest platform. This will be very similar to the concept of battle bots but with drones and in VR. I'm using Unity, and C# to create this game. Along with OpenXR to make it cross platform. And I'm using Unity Services to make it Multiplayer."
+                            liveDemoLink={"temp"}
+                            image={dronesImage}
+                            imageAlt="temp"
+                            githubLink={null}
+                        />
+                    </li>
+                    <li>
+                        <ProjectCard
+                            title="moreWishes"
+                            subtext="An iPhone app that alerts you at 10:10, 11:11, & 12:12"
+                            readmeIntro="This is my first jump for creating iOS apps, This app was a good way for me to learn Swift, SwiftUI, & XCode. todo - put more here"
+                            liveDemoLink={"https://apps.apple.com/us/app/morewishes/id6450796262"}
+                            image={wishesImage}
+                            imageAlt="temp"
+                            githubLink={null}
+                        />
+                    </li>
+                </ul>
 
-                <ul>
+                <h3 className="header3 ">Full Stack:</h3>
+                <ul className="unordered">
+                    <li>
+                        <ProjectCard
+                            title="Point Click Social BETA"
+                            subtext="A social game inspired by Club Penguin and old web social games where you can walk around and chat with friends"
+                            readmeIntro="This is my second jump to Game Development, This is a Club Penguin like online chat game built with Unity, and a Rails back-end using Websockets and Redis to communicate inbetween servers. Has working logins, Save Login, Chatting, Clothes, and more to come. !(please excpect to encounter bugs/errors when playing since i am still working on this currently)! (this is a very very early work in progress and will be updated regularly over a year or two so come check out what I've added and feel free to say hi if im online!)"
+                            liveDemoLink={"https://pointclicksocial.johnfarina.co/"}
+                            image={GamePic}
+                            imageAlt="temp"
+                            githubLink={null}
+                        />
+                    </li>
                     <li>
                         <ProjectCard
                             title="[soundScapes]"
@@ -47,7 +87,6 @@ function ProjectsCard() {
                 </ul>
 
                 <h3 className="header3">Front End:</h3>
-
                 <ul>
                     <li>
                         <ProjectCard
@@ -78,7 +117,7 @@ function ProjectsCard() {
                         />
                     </li>
 
-                    <li>
+                    <li className="lastLi">
                         <ProjectCard
                             title="Zoltar"
                             subtext="A web creation of Zoltar to give you fortunes in the style of a old fortune teller machine."
@@ -89,49 +128,6 @@ function ProjectsCard() {
                             }
                             githubLink={"https://github.com/john-farina/Zoltar"}
                             liveDemoLink={"https://zoltar.johnfarina.co"}
-                        />
-                    </li>
-
-                    <li>
-                        <ProjectCard
-                            title="Magic 8 Ball"
-                            subtext="An online remake of the Magic 8 Ball, built with vanilla
-          JavaScript"
-                            imageAlt="A magic 8 ball rotating and showing the front. "
-                            image={magicBallImage}
-                            readmeIntro={
-                                "For this project i am using Vanilla JS in an attempt to fully master it, This project is of course based off of a Magic 8 Ball a toy people use to ask yes or no questions. Its a simple enough project but designed more to feel like a actual Magic 8 Ball"
-                            }
-                            githubLink={"https://github.com/john-farina/Magic8Ball"}
-                            liveDemoLink={"https://magic8ball.johnfarina.co"}
-                        />
-                    </li>
-
-                    <li>
-                        <ProjectCard
-                            title="Etch-A-Sketch"
-                            subtext="A wesbite that resembles a classic etcha sketch allowing you to draw with ur mouse"
-                            imageAlt="Someone drawing with their mouse on a etcha sketch styled website"
-                            image={etchaImage}
-                            readmeIntro={
-                                "This project was created with the intention to recreate the feel of using a actual etcha sketch as much as i can on a website. I used Vanilla JS because there was no purpose for a library."
-                            }
-                            githubLink={"https://github.com/john-farina/etchaSketch"}
-                            liveDemoLink={"https://etchasketch.johnfarina.co"}
-                        />
-                    </li>
-
-                    <li className="lastLi">
-                        <ProjectCard
-                            title="Tic Tac Toe"
-                            subtext="2 player Tic Tac Toe game, built with vanilla JavaScript"
-                            imageAlt="a player winning Tic Tac Toe"
-                            image={ticTacImage}
-                            readmeIntro={
-                                "A web Tic Tac Toe game, play against a random bot. but its best to play it two player locally with a friend! "
-                            }
-                            githubLink={"https://github.com/john-farina/TicTacCode"}
-                            liveDemoLink={"https://tictactoe.johnfarina.co"}
                         />
                     </li>
                 </ul>

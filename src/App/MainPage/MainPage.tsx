@@ -2,8 +2,7 @@ import { TheLine } from '../components';
 import Header from './Header';
 import './MainPage.scss';
 import { 
-    ExperienceCard, 
-    ExtrasCard, 
+    ExperienceCard,  
     IntroduceCard, 
     LanguagesCard, 
     OtherSkillsCard, 
@@ -16,11 +15,9 @@ function MainPage() {
             <Header />
             <IntroduceCard />
             <TheLine />
-            <ProjectsCard />
-            <TheLine />
-            <ExtrasCard />
-            <TheLine />
             <ExperienceCard />
+            <TheLine />
+            <ProjectsCard />
             <TheLine />
             <LanguagesCard />
             <OtherSkillsCard />

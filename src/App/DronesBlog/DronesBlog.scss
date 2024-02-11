@@ -23,24 +23,16 @@
             margin-left: -2px;
         }
     }
-    
-    .informationContainer {
-        max-width: 100%;
-        min-width: 100%;
-        min-height: 200px;
-        position: relative;
-        border: 2px dashed $white;
-        padding: 15px;
-        box-sizing: border-box; // Add this line
+}
 
-        .date {
-            position: absolute;
-            left: 0;
-            top: 0;
-            margin-top: -10px;
-            margin-left: 20px;
-            background-color: $gray;
-            padding: 0 10px;
-        }
+.blogImageContainer {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .blogImage {
+        height: 250px;
     }
 }

@@ -36,6 +36,9 @@ const figmaIcon = '/images/figma.png';
 const unityIcon = '/images/unity.png';
 const blenderIcon = '/images/blender.png';
 
+// ------ Blog ------
+const droneV1Image = '/images/blog/DroneModelOne.JPG';
+
 export {
     cloverPic,
     sassIcon,
@@ -67,5 +70,6 @@ export {
     abletonIcon,
     figmaIcon,
     unityIcon,
-    blenderIcon
+    blenderIcon,
+    droneV1Image
 }
