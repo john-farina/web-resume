@@ -8,9 +8,6 @@ import {
     tamagotchiImage,
     calculatorImage,
     zoltarImage,
-    magicBallImage,
-    etchaImage,
-    ticTacImage,
     dronesImage,
     wishesImage,
     GamePic
