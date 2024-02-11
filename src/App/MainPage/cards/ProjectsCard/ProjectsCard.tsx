@@ -17,7 +17,7 @@ function ProjectsCard() {
     return (
         <CardContainer title="Projects">
             <>
-                <h3 className="header3 ">Current Side Projects:</h3>
+                <h3 className="header3 projectHeader3">Current Side Projects:</h3>
                 <ProjectCard
                     title="Drone Battles"
                     subtext="(Coming soon) A VR experience where you can fly drones using the controller, and battle with your friends."
@@ -39,7 +39,7 @@ function ProjectsCard() {
                     githubLink={null}
                 />
 
-                <h3 className="header3 ">Full Stack:</h3>
+                <h3 className="header3 projectHeader3">Full Stack:</h3>
                 <ProjectCard
                     title="Point Click Social BETA"
                     subtext="A social game inspired by Club Penguin and old web social games"
@@ -72,7 +72,7 @@ function ProjectsCard() {
                     liveDemoLink={"https://snake.johnfarina.co"}
                 />
 
-                <h3 className="header3">Front End:</h3>
+                <h3 className="header3 projectHeader3">Front End:</h3>
                 <ProjectCard
                     title="Tamagotchi"
                     subtext="A clone of the classic Tamagotchi hand-held game, built with
