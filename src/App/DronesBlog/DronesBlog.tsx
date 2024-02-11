@@ -4,11 +4,12 @@ import { TheLine } from "../components";
 import Post from "./Post";
 import { backIcon, droneV1Image, testingMultiplayerVideo, testingSingleplayerVideo } from "../../static";
 import VideoPlayer from "./VideoPlayer";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 function DronesBlog() {
     return (
         <div className="drones-container">
+            <ScrollRestoration />
             <Link className="backBtn" to="/">
                 <img alt="back" className="backBtnIcon" src={backIcon} />
                 <p className="btnText">back</p>
