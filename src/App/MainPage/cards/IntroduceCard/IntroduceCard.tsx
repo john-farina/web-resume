@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import CardContainer from '../components/CardContainer';
 import HeaderButton from './HeaderButton';
 import './IntroduceCard.scss';
-const resume = '/images/darkModeResume.pdf';
+import { resume } from '../../../../static';
 
 function Dot() {
     return (
@@ -54,7 +54,7 @@ function IntroduceCard() {
                     {titleContent}
                 </h2>
 
-                <div className="contentContainer">
+                <div className="introduceContentContainer">
                     <p className="paragraph">
                         I am a <b className="paragraph">FullStack Engineer</b> I'm self
                         taught, and went to school for Digital Art

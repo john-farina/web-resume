@@ -6,6 +6,7 @@
     white-space: nowrap;
     border-right: 0.14em solid;
     border-color: $white;
+    margin-bottom: 10px;
 
     &:hover {
         &.red {
@@ -26,10 +27,9 @@
     flex-wrap: wrap;
 }
 
-.contentContainer {
+.introduceContentContainer {
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
 .forwardType {

@@ -35,6 +35,13 @@ const abletonIcon = '/images/ableton.jpeg';
 const figmaIcon = '/images/figma.png';
 const unityIcon = '/images/unity.png';
 const blenderIcon = '/images/blender.png';
+const backIcon = '/images/backIcon.svg';
+const resume = '/images/johnFarinaResume.pdf';
+
+// ------ Blog ------
+const droneV1Image = '/images/blog/DroneModelOne.JPG';
+const testingSingleplayerVideo = '/images/blog/TestingSingleplayer.mp4';
+const testingMultiplayerVideo = '/images/blog/TestingMultiplayer.mp4';
 
 export {
     cloverPic,
@@ -67,5 +74,10 @@ export {
     abletonIcon,
     figmaIcon,
     unityIcon,
-    blenderIcon
+    blenderIcon,
+    backIcon,
+    droneV1Image,
+    testingSingleplayerVideo,
+    testingMultiplayerVideo,
+    resume
 }

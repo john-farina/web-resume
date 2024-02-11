@@ -1,0 +1,44 @@
+.titleName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -50px;
+
+    .title {
+        pointer-events: none;
+    }
+
+    .clover {
+        position: absolute;
+        margin-right: 10px;
+        width: 30px;
+        height: 35px;
+        display: flex;
+        margin-right: 260px;
+
+        img {
+            opacity: 0%;
+            margin-left: -10px;
+            height: 100%;
+            rotate: -90deg;
+            z-index: 2;
+            filter: brightness(75%);
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 70%;
+            }
+        }
+    }
+}
+
+@keyframes clover {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

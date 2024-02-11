@@ -1,15 +1,30 @@
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.scss';
 import Head from './Head';
-import Header from './Header';
 import MainPage from './MainPage';
+import DronesBlog from './DronesBlog';
+
+
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <MainPage />,
+      errorElement: <div>404</div>
+    },
+    {
+      path: '/drones',
+      element: <DronesBlog />,
+      errorElement: <div>404</div>
+    }
+  ]);
+  
   return (
     <>
       <Head />
       <main className="container">
-        <Header />
-        <MainPage />
+        <RouterProvider router={router} />
       </main>
     </>
   );

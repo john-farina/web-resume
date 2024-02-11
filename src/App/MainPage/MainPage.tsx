@@ -1,8 +1,8 @@
+import { TheLine } from '../components';
+import Header from './Header';
 import './MainPage.scss';
-import TheLine from './TheLine';
 import { 
-    ExperienceCard, 
-    ExtrasCard, 
+    ExperienceCard,  
     IntroduceCard, 
     LanguagesCard, 
     OtherSkillsCard, 
@@ -12,13 +12,12 @@ import {
 function MainPage() {
     return (
         <div className="card-container">
+            <Header />
             <IntroduceCard />
             <TheLine />
-            <ProjectsCard />
-            <TheLine />
-            <ExtrasCard />
-            <TheLine />
             <ExperienceCard />
+            <TheLine />
+            <ProjectsCard />
             <TheLine />
             <LanguagesCard />
             <OtherSkillsCard />

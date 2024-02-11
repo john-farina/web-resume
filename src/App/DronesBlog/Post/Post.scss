@@ -1,0 +1,27 @@
+@use '../../styles/theme.scss' as *;
+
+.informationContainer {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    position: relative;
+    border: 2px dashed $white;
+    padding: 15px;
+    box-sizing: border-box; // Add this line
+    transition: box-shadow 0.15s ease-in-out;
+
+    .date {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: -10px;
+        margin-left: 20px;
+        background-color: $gray;
+        padding: 0 10px;
+        cursor: default;
+    }
+
+    &:hover {
+        box-shadow: 7px 7px 0 rgba($white, 0.21);
+    }
+}
