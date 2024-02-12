@@ -20,7 +20,7 @@ function ProjectsCard() {
                 <ProjectCard
                     title="Drone Battles"
                     subtext="(Coming soon) A VR experience where you can fly drones using the controller, and battle with your friends."
-                    readmeIntro="This is my real attempt to create a fully functional VR game designed for the quest platform. This will be very similar to the concept of battle bots but with drones and in VR. I'm using Unity, and C# to create this game. Along with OpenXR to make it cross platform. And I'm using Unity Services to make it Multiplayer."
+                    readmeIntro="This is my real attempt to create a fully functional VR game designed for the quest platform. This will be very similar to the concept of battle bots but with drones and in VR. I'm using Unity, and C# to create this game. Along with OpenXR to make it cross platform. And I'm using Unity Services to make it Multiplayer. If you're interested in reading more and see demos - checkout the simple dev blog when clicking on the title. I'll be adding more posts there when I make progress."
                     liveDemoLink="/drones"
                     samePageLink={true}
                     image={dronesImage}
