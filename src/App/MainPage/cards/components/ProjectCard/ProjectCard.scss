@@ -11,9 +11,9 @@
         width: 100%;
 
         .viewMoreBox {
-            border: 2px solid $white;
+            border: 2px solid rgba($white, 0.4);
             width: 100%;
-            height: 18px;
+            height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -29,7 +29,7 @@
             }
 
             &:hover {
-                background-color: $white;
+                background-color: rgba($white, 0.6);
                 color: $gray;
             }
         }
