@@ -44,11 +44,11 @@ function ProjectCard({
                     />
                 )}
 
-                <div className="viewMoreBox" onClick={() => {
+                <button className="viewMoreBox" onClick={() => {
                     setMoreInfoOpen(!moreInfoOpen);
                 }}>
                     <p className="paragraph">{moreInfoOpen ? "Close" : "Read more"}</p>
-                </div>
+                </button>
             </div>
         </div>
     );

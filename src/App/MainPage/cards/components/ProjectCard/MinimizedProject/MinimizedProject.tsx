@@ -10,7 +10,7 @@ interface Props {
 
 function MinimizedProject({ title, subtext, liveDemoLink, samePageLink = false }: Props) {
     return (
-        <div className="projectHeader">
+        <div className="minimizedContainer">
             <div className="headerLeft">
                 {!samePageLink ? (
 
@@ -28,8 +28,9 @@ function MinimizedProject({ title, subtext, liveDemoLink, samePageLink = false }
                     </Link>
                 )}
             </div>
-            <div className="breakParagraph">
-            </div>
+            
+            <div className="breakParagraph" />
+   
             <div className="headerRight">
                 <p className="paragraph">
                     {subtext}
