@@ -24,4 +24,9 @@
     &:hover {
         box-shadow: 7px 7px 0 rgba($white, 0.21);
     }
+
+    @media screen and (max-width: $mobileWidth) {
+        border-left: 0;
+        border-right: 0;
+    }
 }
