@@ -30,7 +30,7 @@ function ProjectsCard() {
 
                 <ProjectCard
                     title="moreWishes"
-                    subtext="An iPhone app that alerts you at 10:10, 11:11, & 12:12"
+                    subtext="An iOS app that alerts you at 10:10, 11:11, & 12:12"
                     readmeIntro="This is my first jump for creating iOS apps, This app was a good way for me to learn Swift, SwiftUI, & how to develop with XCode."
                     liveDemoLink={"https://apps.apple.com/us/app/morewishes/id6450796262"}
                     image={wishesImage}
