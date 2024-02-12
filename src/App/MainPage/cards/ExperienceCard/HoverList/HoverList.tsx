@@ -27,7 +27,7 @@ const HoverList = ({ position, line }: Props) => {
                 >
                     <p className="cardText">
                         ERROR: Line {line}:28: 'yourCompany' is not defined <br />
-                        Please contact <a href="mailto:johnfarina8@gmail.com" className="emailBtn">WEBSITE ADMIN</a> to resolve issues.
+                        Please contact WEBSITE ADMIN to resolve issues.
                     </p>
                     <div className="bridge" />
                 </div>
