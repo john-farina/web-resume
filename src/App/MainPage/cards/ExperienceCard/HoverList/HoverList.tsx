@@ -37,7 +37,7 @@ const HoverList = ({ position, line }: Props) => {
                     <span
                         onMouseEnter={onMouseOver}
                         onMouseLeave={onMouseLeave}
-                        className={`companyNameText ${className}`}
+                        className={`companyNameText err ${className}`}
                     >
                         {/* eslint-disable-next-line  */}
                         {"`${yourCompany.name} - ${yourCompany.website}`"}

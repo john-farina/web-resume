@@ -6,11 +6,9 @@ function ExperienceCard() {
   return (
     <CardContainer title="Experience">
       <ul>
-        <HoverList position="Full Stack" line="34" />
-
         <li>
           <CompanyLink
-            title="Jr FullStack"
+            title="Jr Full-stack"
             link="https://swivvel.io"
             visibleLink="swivvel.io"
             company="swivvel"
@@ -19,12 +17,14 @@ function ExperienceCard() {
 
         <li>
           <CompanyLink
-            title="FullStack Internship"
+            title="Full-stack Internship"
             link="https://bedroomproducer.io"
             visibleLink="bedroomproducer.io"
             company="bedroomProducer"
           />
         </li>
+
+        <HoverList position="Full-stack" line="34" />
       </ul>
     </CardContainer>
   );

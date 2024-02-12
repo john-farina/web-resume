@@ -1,6 +1,6 @@
 @use '../../../../../styles/theme.scss' as *;
 
-.projectHeader {
+.minimizedContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,6 +61,17 @@
 
         .paragraph {
             margin: 0;
+        }
+    }
+
+    @media screen and (max-width: $mobileWidth) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px 1px;
+
+        .breakParagraph {
+            width: 100%;
         }
     }
 }
