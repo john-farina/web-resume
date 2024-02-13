@@ -30,7 +30,7 @@ function ProjectsCard() {
 
                 <ProjectCard
                     title="moreWishes"
-                    subtext="An iOS app that alerts you at 10:10, 11:11, & 12:12"
+                    subtext="An iOS app that alerts you at 10:10, 11:11, & 12:12."
                     readmeIntro="This is my first jump for creating iOS apps, This app was a good way for me to learn Swift, SwiftUI, & how to develop with XCode."
                     liveDemoLink={"https://apps.apple.com/us/app/morewishes/id6450796262"}
                     image={wishesImage}
@@ -41,7 +41,7 @@ function ProjectsCard() {
                 <h3 className="header3 projectHeader3">Full Stack:</h3>
                 <ProjectCard
                     title="Point Click Social BETA"
-                    subtext="A social game inspired by Club Penguin and old web social games"
+                    subtext="A social game inspired by Club Penguin and old web social games."
                     readmeIntro="This is my second jump to Game Development, This is a Club Penguin like online chat game built with Unity, and a Rails back-end using Websockets and Redis to communicate inbetween servers. Has working logins, Save Login, Chatting, Clothes. This is in beta so expect to see bugs if you demo it - also you can just play without logging in"
                     liveDemoLink={"https://pointclicksocial.johnfarina.co/"}
                     image={GamePic}
@@ -61,7 +61,7 @@ function ProjectsCard() {
 
                 <ProjectCard
                     title="Snake"
-                    subtext="This is a remake of Snake built in React, using rails backend to save highscores"
+                    subtext="This is a remake of Snake built in React, using rails backend to save highscores."
                     imageAlt="Playing a game of snake untill they lose"
                     image={snakeImage}
                     readmeIntro={
@@ -75,7 +75,7 @@ function ProjectsCard() {
                 <ProjectCard
                     title="Tamagotchi"
                     subtext="A clone of the classic Tamagotchi hand-held game, built with
-          vanilla JavaScript"
+          vanilla JavaScript."
                     imageAlt="A user playing with the tamagotchi and showing off the menus"
                     image={tamagotchiImage}
                     readmeIntro={
@@ -86,7 +86,7 @@ function ProjectsCard() {
                 />
                 <ProjectCard
                     title="Pocket Calculator"
-                    subtext="A calulcator built in react, and styled to resemble a Pocket Operator"
+                    subtext="A calulcator built in react, and styled to resemble a Pocket Operator."
                     imageAlt="A calculator that looks like a pocket operator"
                     image={calculatorImage}
                     readmeIntro={

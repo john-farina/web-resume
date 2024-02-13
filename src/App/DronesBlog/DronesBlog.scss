@@ -10,6 +10,10 @@
     margin-bottom: 20px;
     position: relative;
 
+    .paragraph {
+        min-width: none;
+    }
+
     .blogLine {
         width: 100%;
         height: 0.5px;

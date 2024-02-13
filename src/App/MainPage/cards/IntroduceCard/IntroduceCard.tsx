@@ -57,7 +57,7 @@ function IntroduceCard() {
                 <div className="introduceContentContainer">
                     <p className="paragraph">
                         I am a <b className="paragraph">full-stack engineer</b>. I'm self-taught, 
-                        and went to school for Digital Art
+                        and went to school for Digital Art.
                     </p>
 
                     <div className="introBtns">
