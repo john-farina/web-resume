@@ -36,7 +36,7 @@ const figmaIcon = '/images/figma.png';
 const unityIcon = '/images/unity.png';
 const blenderIcon = '/images/blender.png';
 const backIcon = '/images/backIcon.svg';
-const resume = '/images/johnFarinaResume.pdf';
+const resume = '/images/JohnFarina-Resume.pdf';
 
 // ------ Blog ------
 const droneV1Image = '/images/blog/DroneModelOne.JPG';
