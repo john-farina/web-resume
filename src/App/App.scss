@@ -26,5 +26,6 @@ body {
 @media screen and (max-width: $mobileWidth) {
   .container {
     padding: 0 9px;
+    align-items: flex-start;
   }
 }
