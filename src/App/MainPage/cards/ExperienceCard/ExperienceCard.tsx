@@ -10,6 +10,15 @@ function ExperienceCard() {
         
         <li>
           <CompanyLink
+            title="Freelance Web Developer"
+            link="https://rubyonrails.org/"
+            visibleLink="rubyonrails.org"
+            company="rails"
+          />
+        </li>
+
+        <li>
+          <CompanyLink
             title="Founding Junior Engineer"
             link="https://swivvel.io"
             visibleLink="swivvel.io"

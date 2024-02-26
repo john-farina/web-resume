@@ -18,6 +18,10 @@
         &.bedroomProducer {
             background-color: $bedroomProducer
         }
+
+        &.rails {
+            background-color: $rails;
+        }
     }
 }
 
@@ -31,6 +35,10 @@
 
         &.bedroomProducer {
             color: $bedroomProducer
+        }
+
+        &.rails {
+            color: $rails;
         }
     }
 }
