@@ -21,6 +21,10 @@
         &.rails {
             background-color: $rails;
         }
+
+        &.reprise {
+            background-color: $reprise;
+        }
     }
 }
 
@@ -38,6 +42,10 @@
 
         &.rails {
             color: $rails;
+        }
+
+        &.reprise {
+            color: $reprise;
         }
     }
 }

@@ -5,7 +5,7 @@ interface Props {
     title: string;
     visibleLink: string;
     link: string;
-    company: `swivvel` | `bedroomProducer` | `rails`;
+    company: `bedroomProducer` | `swivvel` | `rails` | `reprise`;
 }
 
 const CompanyLink = ({ title, visibleLink, link, company }: Props) => {
@@ -18,6 +18,8 @@ const CompanyLink = ({ title, visibleLink, link, company }: Props) => {
         companyName = "Bedroom Producer";
     } else if (company === "rails") {
         companyName = "Rails Foundation";
+    } else if (company === "reprise") {
+        companyName = "Reprise";
     } else {
         const exhaustiveCheck: never = company;
         return exhaustiveCheck;
