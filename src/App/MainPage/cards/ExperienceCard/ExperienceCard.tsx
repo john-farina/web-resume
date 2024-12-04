@@ -1,12 +1,13 @@
 import CardContainer from "../components/CardContainer";
 import CompanyLink from "./CompanyLink";
+import HoverList from "./HoverList";
 
 function ExperienceCard() {
   return (
     <CardContainer title="Experience">
       <ul>
         {/* Add when looking for a job */}
-        {/* <HoverList position="Software Engineer" line="34" /> */}
+        <HoverList position="Software Engineer" line="34" />
 
         <CompanyLink
           title="Software Engineer I"
@@ -24,7 +25,7 @@ function ExperienceCard() {
 
         <CompanyLink
           title="Founding Junior Engineer"
-          link="https://swivvel.io"
+          link="https://www.linkedin.com/company/swivvel-hq/"
           visibleLink="swivvel.io"
           company="swivvel"
         />

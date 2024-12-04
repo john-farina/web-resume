@@ -28,6 +28,10 @@ const railsLogo = "/images/rails-icon.png";
 const rubyLogo = "/images/ruby.png";
 const cSharpLogo = "/images/cSharpIcon.png";
 const swiftIcon = "/images/swiftIcon.png";
+const jekyllIcon = "/images/jekyll.png";
+const shadcnIcon = "/images/shadcnIcon.png";
+const storybookIcon = "/images/storybookIcon.svg";
+const vueIcon = "/images/vueIcon.png";
 
 // ------ Other Icons ------
 const photoshopIcon = '/images/photoshop.png';
@@ -83,5 +87,9 @@ export {
     testingMultiplayerVideo,
     resume,
     inkCompanionsImage,
-    fidgetProImage
+    fidgetProImage,
+    jekyllIcon,
+    shadcnIcon,
+    storybookIcon,
+    vueIcon,
 }

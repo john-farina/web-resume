@@ -11,7 +11,11 @@ import {
     MuiIcon,
     tailwindIcon,
     cSharpLogo,
-    swiftIcon
+    swiftIcon,
+    jekyllIcon,
+    shadcnIcon,
+    storybookIcon,
+    vueIcon
 } from "../../../../static";
 
 function LanguagesCard() {
@@ -60,6 +64,18 @@ function LanguagesCard() {
                     image={railsLogo}
                     iconClass={null}
                     classes="rails"
+                    placeholder="Jekyll"
+                />
+                <LanguageIcon
+                    image={vueIcon}
+                    iconClass={null}
+                    classes="vue"
+                    placeholder="Vue"
+                />
+                <LanguageIcon
+                    image={jekyllIcon}
+                    iconClass={null}
+                    classes="jekyll"
                     placeholder="<%= ruby_on_rails %>"
                 />
                 <LanguageIcon
@@ -104,6 +120,18 @@ function LanguagesCard() {
                     iconClass={null}
                     classes="tailwind"
                     placeholder='"tailwind-logo w-60"'
+                />
+                <LanguageIcon
+                    image={shadcnIcon}
+                    iconClass={null}
+                    classes="shadcn"
+                    placeholder={`ShadCN`}
+                />
+                <LanguageIcon
+                    image={storybookIcon}
+                    iconClass={null}
+                    classes="storybook"
+                    placeholder={`Storybook`}
                 />
             </div>
         </CardContainer>
