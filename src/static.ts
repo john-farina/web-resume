@@ -12,7 +12,9 @@ const magicBallImage = "/images/projects/8Ball-Opening (1).gif";
 const etchaImage = "/images/projects/EtchaDrawReset.gif";
 const ticTacImage = "/images/projects/Win-TicTacToe.gif";
 const dronesImage = "/images/projects/dronesScreenshot.jpg";
+const inkCompanionsImage = "/images/projects/inkCompanions.png";
 const wishesImage = "/images/projects/wishesScreenshot.png";
+const fidgetProImage = "/images/projects/fidgetPro.png";
 
 // ------ Tech Icons ------
 const sassIcon = "/images/sass.png";
@@ -79,5 +81,7 @@ export {
     droneV1Image,
     testingSingleplayerVideo,
     testingMultiplayerVideo,
-    resume
+    resume,
+    inkCompanionsImage,
+    fidgetProImage
 }
