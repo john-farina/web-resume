@@ -49,6 +49,9 @@ const droneV1Image = '/images/blog/DroneModelOne.JPG';
 const testingSingleplayerVideo = '/images/blog/TestingSingleplayer.mp4';
 const testingMultiplayerVideo = '/images/blog/TestingMultiplayer.mp4';
 
+const fidgetPro = '/images/apps/fidgetPro.png';
+const moreWishes = '/images/apps/moreWishes.png';
+
 export {
     cloverPic,
     sassIcon,
@@ -92,4 +95,6 @@ export {
     shadcnIcon,
     storybookIcon,
     vueIcon,
+    fidgetPro,
+    moreWishes
 }

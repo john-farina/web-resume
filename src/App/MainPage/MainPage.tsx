@@ -6,7 +6,8 @@ import {
     IntroduceCard,
     LanguagesCard,
     OtherSkillsCard,
-    ProjectsCard
+    ProjectsCard,
+    ReleasedAppsCard
 } from './cards';
 import useHashPageNavigation from './useHashPageNavigation';
 
@@ -17,6 +18,8 @@ function MainPage() {
         <div className="card-container">
             <Header />
             <IntroduceCard />
+            <TheLine />
+            <ReleasedAppsCard />
             <TheLine />
             <ExperienceCard />
             <TheLine />

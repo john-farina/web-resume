@@ -5,36 +5,28 @@ interface Props {
     title: string;
     subtext: string;
     liveDemoLink: string;
-    samePageLink?: boolean;
+    expandProject: () => void;
 }
 
-function MinimizedProject({ title, subtext, liveDemoLink, samePageLink = false }: Props) {
+function MinimizedProject({ title, subtext, liveDemoLink, expandProject }: Props) {
     return (
-        <div className="minimizedContainer">
-            <div className="headerLeft">
-                {!samePageLink ? (
-
-                    <button
-                        onClick={() => {
-                            window.open(liveDemoLink, "_blank");
-                        }}
-                        className="textButton"
-                    >
-                        {title}
-                    </button>
-                ) : (
-                    <Link to={liveDemoLink} className="textButton">
-                        {title}
-                    </Link>
-                )}
+        <div className="minimizedCont">
+            <div
+                className="left"
+                onClick={() => {
+                    window.open(liveDemoLink, "_blank");
+                }}
+            >
+                <p>{title}</p>
             </div>
-            
-            <div className="breakParagraph" />
-   
-            <div className="headerRight">
-                <p className="paragraph">
-                    {subtext}
-                </p>
+
+            <div
+                className="right"
+                onClick={() => {
+                    expandProject();
+                }}
+            >
+                <p>{subtext}</p>
             </div>
         </div>
 

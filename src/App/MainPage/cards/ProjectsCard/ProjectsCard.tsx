@@ -15,9 +15,9 @@ import {
 
 function ProjectsCard() {
     return (
-        <CardContainer title="Projects">
+        <CardContainer title="Past Projects">
             <>
-                <h3 className="header3 projectHeader3">Current Side Project:</h3>
+                {/* <h3 className="header3 projectHeader3">Current Side Project:</h3>
                 <ProjectCard
                     title="Ink Companions"
                     subtext="(Coming soon) A Multiplatyer Virtual Pet game built in untity"
@@ -26,12 +26,10 @@ function ProjectsCard() {
                     image={inkCompanionsImage}
                     imageAlt="temp"
                     githubLink={null}
-                />
+                /> */}
 
-   
-
-                <h3 className="header3 projectHeader3">Full Stack:</h3>
-                <ProjectCard
+                {/* <h3 className="header3 projectHeader3">Full Stack:</h3> */}
+                {/* <ProjectCard
                     title="Point Click Social"
                     subtext="A social game inspired by Club Penguin and old web social games."
                     readmeIntro="(I'm no longer making updates to this game) This is my second jump to Game Development, This is a Club Penguin like online chat game built with Unity, and a Rails back-end using Websockets and Redis to communicate inbetween servers. Has working logins, Save Login, Chatting, Clothes. This isn't in a finished state so expect bugs while trying it, also you can just play without logging in"
@@ -39,7 +37,7 @@ function ProjectsCard() {
                     image={GamePic}
                     imageAlt="temp"
                     githubLink={null}
-                />
+                /> */}
 
                 <ProjectCard
                     title="[soundScapes]"
@@ -63,8 +61,8 @@ function ProjectsCard() {
                     liveDemoLink={"https://snake.johnfarina.co"}
                 />
 
-                <h3 className="header3 projectHeader3">iOS:</h3>
-                <ProjectCard
+                {/* <h3 className="header3 projectHeader3">iOS:</h3> */}
+                {/* <ProjectCard
                     title="Fidget Pro"
                     subtext="A Vision Pro app just made to pop bubbles. Why? Because when you buy a Vision Pro this is what your dying to do"
                     readmeIntro="Loved making this app for the Vision Pro, I really believe this is the future of tech so I had to make an app for it - just to learn how."
@@ -81,10 +79,10 @@ function ProjectsCard() {
                     image={wishesImage}
                     imageAlt="temp"
                     githubLink={null}
-                />
+                /> */}
 
 
-                <h3 className="header3 projectHeader3">Front End:</h3>
+                {/* <h3 className="header3 projectHeader3">Front End:</h3> */}
                 <ProjectCard
                     title="Tamagotchi"
                     subtext="A clone of the classic Tamagotchi hand-held game, built with

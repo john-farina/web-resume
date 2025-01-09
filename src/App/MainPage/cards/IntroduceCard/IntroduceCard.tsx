@@ -56,23 +56,16 @@ function IntroduceCard() {
 
                 <div className="introduceContentContainer">
                     <p className="paragraph">
-                        I am a <b className="paragraph">full-stack engineer</b>. I'm self-taught, 
-                        and went to school for Digital Art.
+                        I’m a (self-taught) <b className="paragraph">full-stack engineer</b>, and I went to school for Digital Art.
                     </p>
 
                     <div className="introBtns">
-                        <HeaderButton
+                        {/* <HeaderButton
                             href={resume}
                         >
                             resume
                         </HeaderButton>
-                        <Dot />
-                        <HeaderButton
-                            href="mailto:johnfarina8@gmail.com"
-                        >
-                            email
-                        </HeaderButton>
-                        <Dot />
+                        <Dot /> */}
                         <HeaderButton
                             href="https://github.com/john-farina"
                         >
@@ -80,10 +73,16 @@ function IntroduceCard() {
                         </HeaderButton>
                         <Dot />
                         <HeaderButton
+                            href="mailto:johnfarina8@gmail.com"
+                        >
+                            email
+                        </HeaderButton>
+                        {/* <Dot />
+                        <HeaderButton
                             href="https://www.linkedin.com/in/john-farina8/"
                         >
                             linkedin
-                        </HeaderButton>
+                        </HeaderButton> */}
                     </div>
                 </div>
             </>
