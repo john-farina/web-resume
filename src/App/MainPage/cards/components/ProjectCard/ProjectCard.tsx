@@ -31,7 +31,14 @@ function ProjectCard({
         <div className="projectContainer">
             <div className="newProjectContainer">
                 {!moreInfoOpen ? (
-                    <MinimizedProject title={title} subtext={subtext} liveDemoLink={liveDemoLink} samePageLink={samePageLink} />
+                    <MinimizedProject
+                        title={title}
+                        subtext={subtext}
+                        liveDemoLink={liveDemoLink}
+                        expandProject={() => {
+                            setMoreInfoOpen(!moreInfoOpen);
+                        }}
+                    />
                 ) : (
                     <ExpandedProject
                         samePageLink={samePageLink}

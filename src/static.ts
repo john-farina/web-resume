@@ -12,7 +12,9 @@ const magicBallImage = "/images/projects/8Ball-Opening (1).gif";
 const etchaImage = "/images/projects/EtchaDrawReset.gif";
 const ticTacImage = "/images/projects/Win-TicTacToe.gif";
 const dronesImage = "/images/projects/dronesScreenshot.jpg";
+const inkCompanionsImage = "/images/projects/inkCompanions.png";
 const wishesImage = "/images/projects/wishesScreenshot.png";
+const fidgetProImage = "/images/projects/fidgetPro.png";
 
 // ------ Tech Icons ------
 const sassIcon = "/images/sass.png";
@@ -26,6 +28,10 @@ const railsLogo = "/images/rails-icon.png";
 const rubyLogo = "/images/ruby.png";
 const cSharpLogo = "/images/cSharpIcon.png";
 const swiftIcon = "/images/swiftIcon.png";
+const jekyllIcon = "/images/jekyll.png";
+const shadcnIcon = "/images/shadcnIcon.png";
+const storybookIcon = "/images/storybookIcon.svg";
+const vueIcon = "/images/vueIcon.png";
 
 // ------ Other Icons ------
 const photoshopIcon = '/images/photoshop.png';
@@ -42,6 +48,12 @@ const resume = '/images/JohnFarina-Resume.pdf';
 const droneV1Image = '/images/blog/DroneModelOne.JPG';
 const testingSingleplayerVideo = '/images/blog/TestingSingleplayer.mp4';
 const testingMultiplayerVideo = '/images/blog/TestingMultiplayer.mp4';
+
+const fidgetPro = '/images/apps/fidgetPro.png';
+const moreWishes = '/images/apps/moreWishes.png';
+
+// ------ Ink Companion Sprites ------
+const spriteTeen2 = '/images/sprites/Teen2.png';
 
 export {
     cloverPic,
@@ -79,5 +91,14 @@ export {
     droneV1Image,
     testingSingleplayerVideo,
     testingMultiplayerVideo,
-    resume
+    resume,
+    inkCompanionsImage,
+    fidgetProImage,
+    jekyllIcon,
+    shadcnIcon,
+    storybookIcon,
+    vueIcon,
+    fidgetPro,
+    moreWishes,
+    spriteTeen2
 }

@@ -3,10 +3,12 @@ import Header from './Header';
 import './MainPage.scss';
 import {
     ExperienceCard,
+    InkCard,
     IntroduceCard,
     LanguagesCard,
     OtherSkillsCard,
-    ProjectsCard
+    ProjectsCard,
+    ReleasedAppsCard
 } from './cards';
 import useHashPageNavigation from './useHashPageNavigation';
 
@@ -17,6 +19,10 @@ function MainPage() {
         <div className="card-container">
             <Header />
             <IntroduceCard />
+            <TheLine />
+            <InkCard />
+            <TheLine />
+            <ReleasedAppsCard />
             <TheLine />
             <ExperienceCard />
             <TheLine />

@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.scss';
 import Head from './Head';
 import MainPage from './MainPage';
-import DronesBlog from './DronesBlog';
+// import DronesBlog from './DronesBlog';
 
 
 
@@ -13,11 +13,11 @@ function App() {
       element: <MainPage />,
       errorElement: <div>404</div>
     },
-    {
-      path: '/drones',
-      element: <DronesBlog />,
-      errorElement: <div>404</div>
-    }
+    // {
+    //   path: '/drones',
+    //   element: <DronesBlog />,
+    //   errorElement: <div>404</div>
+    // }
   ]);
   
   return (

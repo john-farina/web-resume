@@ -7,48 +7,12 @@ import {
     snakeImage,
     tamagotchiImage,
     calculatorImage,
-    dronesImage,
-    wishesImage,
-    GamePic
 } from "../../../../static";
 
 function ProjectsCard() {
     return (
-        <CardContainer title="Projects">
+        <CardContainer title="Past Projects">
             <>
-                <h3 className="header3 projectHeader3">Current Side Projects:</h3>
-                <ProjectCard
-                    title="Drone Battles"
-                    subtext="(Coming soon) A VR experience where you can fly drones using the controller, and battle with your friends."
-                    readmeIntro="This is my real attempt to create a fully functional VR game designed for the quest platform. This will be very similar to the concept of battle bots but with drones and in VR. I'm using Unity, and C# to create this game. Along with OpenXR to make it cross platform. And I'm using Unity Services to make it Multiplayer. If you're interested in reading more and see demos - checkout the simple dev blog when clicking on the title. I'll be adding more posts there when I make progress."
-                    liveDemoLink="/drones"
-                    samePageLink={true}
-                    image={dronesImage}
-                    imageAlt="temp"
-                    githubLink={null}
-                />
-
-                <ProjectCard
-                    title="moreWishes"
-                    subtext="An iOS app that alerts you at 10:10, 11:11, & 12:12."
-                    readmeIntro="This is my first jump for creating iOS apps, This app was a good way for me to learn Swift, SwiftUI, & how to develop with XCode."
-                    liveDemoLink={"https://apps.apple.com/us/app/morewishes/id6450796262"}
-                    image={wishesImage}
-                    imageAlt="temp"
-                    githubLink={null}
-                />
-
-                <h3 className="header3 projectHeader3">Full Stack:</h3>
-                <ProjectCard
-                    title="Point Click Social BETA"
-                    subtext="A social game inspired by Club Penguin and old web social games."
-                    readmeIntro="This is my second jump to Game Development, This is a Club Penguin like online chat game built with Unity, and a Rails back-end using Websockets and Redis to communicate inbetween servers. Has working logins, Save Login, Chatting, Clothes. This is in beta so expect to see bugs if you demo it - also you can just play without logging in"
-                    liveDemoLink={"https://pointclicksocial.johnfarina.co/"}
-                    image={GamePic}
-                    imageAlt="temp"
-                    githubLink={null}
-                />
-
                 <ProjectCard
                     title="[soundScapes]"
                     subtext="A background noise website made with Rails."
@@ -71,7 +35,6 @@ function ProjectsCard() {
                     liveDemoLink={"https://snake.johnfarina.co"}
                 />
 
-                <h3 className="header3 projectHeader3">Front End:</h3>
                 <ProjectCard
                     title="Tamagotchi"
                     subtext="A clone of the classic Tamagotchi hand-held game, built with
@@ -84,6 +47,7 @@ function ProjectsCard() {
                     githubLink={"https://github.com/john-farina/myTamagotchi"}
                     liveDemoLink={"https://tamagotchi.johnfarina.co"}
                 />
+
                 <ProjectCard
                     title="Pocket Calculator"
                     subtext="A calulcator built in react, and styled to resemble a Pocket Operator."

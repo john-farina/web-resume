@@ -1,0 +1,70 @@
+@use '../../../styles/theme.scss' as *;
+
+.header3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.releasedAppCard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .releasedApp {
+        cursor: pointer;
+        border: 1px solid rgba($white, 0.4);
+        // border-radius: 2px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        flex: 1;
+        padding: 10px;
+
+        .left {
+            // background-color: red;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .appIcon {
+                width: 125px;
+                height: 125px;
+                border-radius: 12px;
+            }
+
+            .appIcon.circle {
+                border-radius: 50%;
+            }
+        }
+
+        .appInfo {
+            // background: green;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            gap: 10px;
+
+            .title {
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+            .description {
+                font-size: 0.8rem;
+                line-height: 1.4;
+            }
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
+    }
+}

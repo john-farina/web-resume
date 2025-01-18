@@ -1,12 +1,11 @@
 .flex-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 15px;
 }
 
 .flex-grid > * {
-    flex:  1  0 auto;
-    max-width: 80px;
-    max-height: 80px;
-    margin: 7px;
+    aspect-ratio: 1;
+    width: 100%;
 }

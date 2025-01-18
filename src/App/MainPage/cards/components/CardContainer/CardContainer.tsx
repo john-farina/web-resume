@@ -4,11 +4,12 @@ import "./CardContainer.scss";
 interface Props {
     title?: string | null;
     children: ReactElement;
+    pixelFont?: boolean;
 }
 
-function CardContainer({ title = null, children }: Props) {
+function CardContainer({ title = null, children, pixelFont }: Props) {
     return (
-        <div className="cardContainer">
+        <div className={"cardContainer" + (pixelFont ? " pixelFont" : "")}>
             <div className="cardContents">
                 {title && <h2 className="header2">{title}:</h2>}
                 {children}
