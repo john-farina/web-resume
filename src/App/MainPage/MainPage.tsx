@@ -3,6 +3,7 @@ import Header from './Header';
 import './MainPage.scss';
 import {
     ExperienceCard,
+    InkCard,
     IntroduceCard,
     LanguagesCard,
     OtherSkillsCard,
@@ -18,6 +19,8 @@ function MainPage() {
         <div className="card-container">
             <Header />
             <IntroduceCard />
+            <TheLine />
+            <InkCard />
             <TheLine />
             <ReleasedAppsCard />
             <TheLine />

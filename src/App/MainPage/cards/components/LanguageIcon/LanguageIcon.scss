@@ -9,8 +9,6 @@
   border-style: dashed;
   border-width: 2px;
   border-radius: 10px;
-  width: 80px;
-  height: 80px;
   background-color: rgba(0, 0, 0, 30%);
   transform: translateY(0);
   transition: transform 0.2s ease-out, box-shadow 0.2s;
@@ -165,7 +163,12 @@
 }
 
 .shadcn {
-  width: 45px;
+  width: 40px;
+  filter: invert(0.3) !important;
+
+  &:hover {
+    filter: invert(1) !important;
+  }
 }
 
 .storybook {

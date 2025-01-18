@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './MinimizedProject.scss';
 
 interface Props {
@@ -16,6 +15,14 @@ function MinimizedProject({ title, subtext, liveDemoLink, expandProject }: Props
                 onClick={() => {
                     window.open(liveDemoLink, "_blank");
                 }}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                        window.open(liveDemoLink, "_blank");
+                    }
+                }}
+                role="button"
+                tabIndex={0}
+                aria-label={`Open ${title} in new tab`}
             >
                 <p>{title}</p>
             </div>
@@ -25,12 +32,18 @@ function MinimizedProject({ title, subtext, liveDemoLink, expandProject }: Props
                 onClick={() => {
                     expandProject();
                 }}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                        expandProject();
+                    }
+                }}
+                role="button"
+                tabIndex={0}
+                aria-label={`Expand details for ${title}`}
             >
                 <p>{subtext}</p>
             </div>
         </div>
-
     )
 }
-
 export default MinimizedProject;

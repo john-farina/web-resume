@@ -13,34 +13,44 @@
 
     .releasedApp {
         cursor: pointer;
-        border: 1px solid rgba(255, 255, 255, 0.58);
-        border-radius: 2px;
+        border: 1px solid rgba($white, 0.4);
+        // border-radius: 2px;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: start;
         gap: 10px;
         flex: 1;
         padding: 10px;
 
-        .appIcon {
-            width: 85px;
-            height: 85px;
-            border-radius: 12px;
-        }
+        .left {
+            // background-color: red;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-        .appIcon.circle {
-            border-radius: 50%;
+            .appIcon {
+                width: 125px;
+                height: 125px;
+                border-radius: 12px;
+            }
+
+            .appIcon.circle {
+                border-radius: 50%;
+            }
         }
 
         .appInfo {
+            // background: green;
             display: flex;
             flex-direction: column;
+            height: 100%;
             gap: 10px;
 
             .title {
                 font-weight: bold;
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             .description {
@@ -50,7 +60,7 @@
         }
 
         &:hover {
-            background-color: rgba(255, 255, 255, 0.032);
+            background: rgba(255, 255, 255, 0.02);
         }
     }
 

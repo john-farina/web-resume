@@ -6,21 +6,20 @@ function ExperienceCard() {
   return (
     <CardContainer title="Experience">
       <ul>
-        {/* Add when looking for a job */}
         <HoverList position="Software Engineer" line="34" />
-
-        <CompanyLink
-          title="Software Engineer I"
-          link="https://www.reprise.com/"
-          visibleLink="reprise.com"
-          company="reprise"
-        />
 
         <CompanyLink
           title="Freelance Web Developer"
           link="https://rubyonrails.org/world/2024"
           visibleLink="rubyonrails.org"
           company="rails"
+        />
+
+        <CompanyLink
+          title="Software Engineer I"
+          link="https://www.reprise.com/"
+          visibleLink="reprise.com"
+          company="reprise"
         />
 
         <CompanyLink

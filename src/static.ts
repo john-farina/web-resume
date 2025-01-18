@@ -52,6 +52,9 @@ const testingMultiplayerVideo = '/images/blog/TestingMultiplayer.mp4';
 const fidgetPro = '/images/apps/fidgetPro.png';
 const moreWishes = '/images/apps/moreWishes.png';
 
+// ------ Ink Companion Sprites ------
+const spriteTeen2 = '/images/sprites/Teen2.png';
+
 export {
     cloverPic,
     sassIcon,
@@ -96,5 +99,6 @@ export {
     storybookIcon,
     vueIcon,
     fidgetPro,
-    moreWishes
+    moreWishes,
+    spriteTeen2
 }

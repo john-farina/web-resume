@@ -17,28 +17,6 @@ function ProjectsCard() {
     return (
         <CardContainer title="Past Projects">
             <>
-                {/* <h3 className="header3 projectHeader3">Current Side Project:</h3>
-                <ProjectCard
-                    title="Ink Companions"
-                    subtext="(Coming soon) A Multiplatyer Virtual Pet game built in untity"
-                    readmeIntro="This is a multiplayer game and a virtual pet game in one. It's a bit of a unique concept so I would recommend reading the blog post about what this game is, Just click the title to read more! Also just a fun thing to note Point Click Social below was the game that sparked my interest in the layout thats used for the multiplayer portion"
-                    liveDemoLink={"https://blog.inkcompanions.com/12-2024/what-is-ink-companions/"}
-                    image={inkCompanionsImage}
-                    imageAlt="temp"
-                    githubLink={null}
-                /> */}
-
-                {/* <h3 className="header3 projectHeader3">Full Stack:</h3> */}
-                {/* <ProjectCard
-                    title="Point Click Social"
-                    subtext="A social game inspired by Club Penguin and old web social games."
-                    readmeIntro="(I'm no longer making updates to this game) This is my second jump to Game Development, This is a Club Penguin like online chat game built with Unity, and a Rails back-end using Websockets and Redis to communicate inbetween servers. Has working logins, Save Login, Chatting, Clothes. This isn't in a finished state so expect bugs while trying it, also you can just play without logging in"
-                    liveDemoLink={"https://pointclicksocial.johnfarina.co/"}
-                    image={GamePic}
-                    imageAlt="temp"
-                    githubLink={null}
-                /> */}
-
                 <ProjectCard
                     title="[soundScapes]"
                     subtext="A background noise website made with Rails."
@@ -61,28 +39,6 @@ function ProjectsCard() {
                     liveDemoLink={"https://snake.johnfarina.co"}
                 />
 
-                {/* <h3 className="header3 projectHeader3">iOS:</h3> */}
-                {/* <ProjectCard
-                    title="Fidget Pro"
-                    subtext="A Vision Pro app just made to pop bubbles. Why? Because when you buy a Vision Pro this is what your dying to do"
-                    readmeIntro="Loved making this app for the Vision Pro, I really believe this is the future of tech so I had to make an app for it - just to learn how."
-                    liveDemoLink={"https://apps.apple.com/us/app/fidget-pro/id6501970788"}
-                    image={fidgetProImage}
-                    imageAlt="temp"
-                    githubLink={null}
-                />
-                <ProjectCard
-                    title="moreWishes"
-                    subtext="An iOS app that alerts you at 10:10, 11:11, & 12:12."
-                    readmeIntro="This is my first jump for creating iOS apps, This app was a good way for me to learn Swift, SwiftUI, & how to develop with XCode."
-                    liveDemoLink={"https://apps.apple.com/us/app/morewishes/id6450796262"}
-                    image={wishesImage}
-                    imageAlt="temp"
-                    githubLink={null}
-                /> */}
-
-
-                {/* <h3 className="header3 projectHeader3">Front End:</h3> */}
                 <ProjectCard
                     title="Tamagotchi"
                     subtext="A clone of the classic Tamagotchi hand-held game, built with
@@ -95,6 +51,7 @@ function ProjectsCard() {
                     githubLink={"https://github.com/john-farina/myTamagotchi"}
                     liveDemoLink={"https://tamagotchi.johnfarina.co"}
                 />
+
                 <ProjectCard
                     title="Pocket Calculator"
                     subtext="A calulcator built in react, and styled to resemble a Pocket Operator."

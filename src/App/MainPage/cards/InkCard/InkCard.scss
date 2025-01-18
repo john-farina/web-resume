@@ -1,0 +1,48 @@
+.inkCard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .lilGuy {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        top: 0;
+        margin-top: -35px;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            -ms-interpolation-mode: nearest-neighbor;
+        }
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .iframeContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .linkContainer {
+            width: 100%;
+            // background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            a {
+                color: white;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

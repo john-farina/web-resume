@@ -5,4 +5,16 @@
     align-items: center;
     width: 100%;
     margin-bottom: 15px;
+
+    &.pixelFont {
+        font-family: "Nimbus";
+
+        .header2 {
+            font-family: "Nimbus";
+        }
+    }
+
+    .cardContents {
+        width: 100%;
+    }
 }
