@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState } from 'react';
 import CardContainer from '../components/CardContainer';
 import HeaderButton from './HeaderButton';
 import './IntroduceCard.scss';
-import { resume } from '../../../../static';
 
 function Dot() {
     return (

@@ -7,10 +7,6 @@ import {
     snakeImage,
     tamagotchiImage,
     calculatorImage,
-    wishesImage,
-    inkCompanionsImage,
-    fidgetProImage,
-    GamePic
 } from "../../../../static";
 
 function ProjectsCard() {
