@@ -69,7 +69,12 @@ function ExpandedProject({
             </div>
             <div className="bottom">
                 <div className="imageContainer">
-                    <img className="projectImage" src={image} alt={imageAlt} />
+                    <img
+                        className="projectImage"
+                        src={image}
+                        alt={imageAlt}
+                        loading="lazy"
+                    />
                 </div>
 
                 <div
