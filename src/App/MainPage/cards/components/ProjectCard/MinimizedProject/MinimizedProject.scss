@@ -30,6 +30,10 @@
                 text-decoration: underline;
             }
         }
+
+        @media screen and (max-width: 600px) {
+            width: 50%
+        }
     }
 
     .right {
@@ -37,6 +41,10 @@
 
         p {
             font-size: 0.9rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 50%
         }
     }
 }
