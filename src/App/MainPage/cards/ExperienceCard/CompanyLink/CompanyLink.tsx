@@ -6,9 +6,10 @@ interface Props {
     visibleLink: string;
     link: string;
     company: `bedroomProducer` | `swivvel` | `rails` | `reprise`;
+    isMobile: boolean;
 }
 
-const CompanyLink = ({ title, visibleLink, link, company }: Props) => {
+const CompanyLink = ({ title, visibleLink, link, company, isMobile }: Props) => {
     const [hoverOverBtn, setHoverOverBtn] = useState(false);
 
     let companyName;
@@ -27,24 +28,39 @@ const CompanyLink = ({ title, visibleLink, link, company }: Props) => {
 
     const atSignClass = hoverOverBtn ? `hovering` : ``;
 
-
     return (
         <li className="companyList">
-            <p className="paragraph">
-                {title} <span className={`atSign ${atSignClass} ${company}`}>@</span> {companyName} -{" "}
-                <a
-                    className={`listLink ${company}`}
-                    onMouseEnter={() => setHoverOverBtn(true)}
-                    onMouseLeave={() => setHoverOverBtn(false)}
-                    target="_blank"
-                    rel="noreferrer"
-                    href={link}
-                >
-                    {visibleLink}
-                </a>
-            </p>
+            {isMobile ? (
+                <p className="paragraph">
+                    {title} {" "} <span className={`atSign ${atSignClass} ${company}`}>@</span> {" "}
+                    <a
+                        className={`listLink ${company}`}
+                        onMouseEnter={() => setHoverOverBtn(true)}
+                        onMouseLeave={() => setHoverOverBtn(false)}
+                        target="_blank"
+                        rel="noreferrer"
+                        href={link}
+                    >
+                        {companyName}
+                    </a>
+                </p>
+            ) : (
+                <p className="paragraph">
+                    {title} <span className={`atSign ${atSignClass} ${company}`}>@</span> {companyName} -{" "}
+                    <a
+                        className={`listLink ${company}`}
+                        onMouseEnter={() => setHoverOverBtn(true)}
+                        onMouseLeave={() => setHoverOverBtn(false)}
+                        target="_blank"
+                        rel="noreferrer"
+                        href={link}
+                    >
+                        {visibleLink}
+                    </a>
+                </p>
+            )}
         </li>
-    )
+    );
 }
 
 export default CompanyLink;
